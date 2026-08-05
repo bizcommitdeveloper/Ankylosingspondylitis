@@ -7,7 +7,8 @@ import { getFirestore, type Firestore } from "firebase/firestore";
  * expose in the browser bundle (they identify the project, they are not
  * secrets); access is protected by Firestore security rules, not by hiding
  * these values. Copy `.env.example` to `.env.local` and fill in your project's
- * values, and set the same variables in your Vercel project settings.
+ * values for local development; for deployment the same variables are set in
+ * `apphosting.yaml` (Firebase App Hosting).
  */
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,

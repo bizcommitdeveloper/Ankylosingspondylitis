@@ -25,7 +25,7 @@ signed-in user's Firestore data, and plotted on a trend dashboard.
 | Auth       | Firebase Authentication (Google + email/password)  |
 | Database   | Cloud Firestore                                    |
 | Charts     | Recharts                                           |
-| Hosting    | Vercel                                             |
+| Hosting    | Firebase App Hosting (Next.js SSR on Cloud Run)    |
 
 ## Commands
 
@@ -67,7 +67,10 @@ src/
     questions.ts          # BASDAI/BASFI question definitions (slider config)
     types.ts              # Entry / NewEntry / InstrumentType
 firestore.rules           # per-user security rules
-.env.example              # required NEXT_PUBLIC_FIREBASE_* variables
+apphosting.yaml           # Firebase App Hosting: run config + NEXT_PUBLIC_* env
+firebase.json             # Firebase CLI config (Firestore rules deploy)
+.firebaserc               # default Firebase project id (placeholder)
+.env.example              # required NEXT_PUBLIC_FIREBASE_* variables (local dev)
 ```
 
 ## Key conventions
@@ -97,7 +100,10 @@ firestore.rules           # per-user security rules
   `.env.example`). These identify the project and ship to the browser; access is
   protected by `firestore.rules`, not by hiding them.
 - `.env`, `.env*.local`, and `*.pem` are gitignored — **never commit secrets or
-  real credentials.** Set the same vars in Vercel's environment settings.
+  real credentials.** For deployment the same `NEXT_PUBLIC_*` values live in
+  `apphosting.yaml` (they're public project identifiers, not secrets); anything
+  genuinely secret belongs in Cloud Secret Manager, referenced from
+  `apphosting.yaml`, not committed.
 
 ## Development workflow
 
@@ -133,6 +139,7 @@ firestore.rules           # per-user security rules
 | Stack | Next.js 14 + TypeScript + Tailwind + Firebase + Recharts |
 | App code present? | Yes |
 | Build gate | `npm run build` (type-check + lint) |
+| Hosting | Firebase App Hosting (`apphosting.yaml`) |
 | Working branch | `claude/claude-md-docs-evr1lw` |
 | Protected branch | `main` (never push directly) |
-| Secrets | `NEXT_PUBLIC_FIREBASE_*` in gitignored `.env*.local` / Vercel only |
+| Secrets | `NEXT_PUBLIC_FIREBASE_*` in `.env*.local` (local) / `apphosting.yaml` (deploy) |

@@ -17,9 +17,9 @@ them with a clinician.
 
 - **Next.js 14** (App Router) + **React 18** + **TypeScript**
 - **Tailwind CSS** for styling (calm, clinical, light/dark)
-- **Firebase** — Authentication (Google + email/password) and Cloud Firestore
+- **Firebase** — Authentication (Google + email/password), Cloud Firestore, and
+  **App Hosting** (server-side rendering on Cloud Run)
 - **Recharts** for the trend charts
-- Deploys to **Vercel**
 
 ## Getting started
 
@@ -43,13 +43,28 @@ build), `npm run lint`.
 4. Copy the web SDK config values into `.env.local` (see
    [`.env.example`](./.env.example)).
 
-## Deploying to Vercel
+## Deploying to Firebase App Hosting
 
-1. Push this repo to GitHub and import it into Vercel.
-2. Add the same `NEXT_PUBLIC_FIREBASE_*` variables under **Project → Settings →
-   Environment Variables**.
-3. In Firebase **Authentication → Settings → Authorized domains**, add your
-   Vercel domain so sign-in works in production.
+App Hosting builds and serves the full Next.js app (server-side rendering) from
+your GitHub repo. It requires the **Blaze** (pay-as-you-go) plan.
+
+1. Upgrade your Firebase project to the **Blaze** plan.
+2. In the Firebase console, open **Build → App Hosting → Get started** and
+   create a backend, connecting this GitHub repo and the branch to deploy
+   (e.g. `main`).
+3. App Hosting reads [`apphosting.yaml`](./apphosting.yaml) for run settings and
+   environment variables — replace the placeholder `NEXT_PUBLIC_FIREBASE_*`
+   values there with your project's web config.
+4. In Firebase **Authentication → Settings → Authorized domains**, add your App
+   Hosting domain (e.g. `your-backend--your-project.web.app`) so sign-in works
+   in production.
+5. Push to the connected branch — App Hosting builds with Cloud Build and rolls
+   out automatically.
+
+Prefer the CLI? `npm i -g firebase-tools`, `firebase login`, then
+`firebase init apphosting`. Publish the Firestore rules with
+`firebase deploy --only firestore:rules` (uses [`firebase.json`](./firebase.json)
+and [`.firebaserc`](./.firebaserc) — set your project ID there first).
 
 ## Data model
 
@@ -67,6 +82,7 @@ Entries are stored per user at `users/{uid}/entries/{entryId}`:
 ## Privacy
 
 Health data is personal. Entries are scoped to the signed-in user by Firestore
-security rules; nothing is shared with third parties. Never commit real Firebase
-credentials — keep them in gitignored `.env*.local` files and in Vercel's
-environment settings.
+security rules; nothing is shared with third parties. The `NEXT_PUBLIC_FIREBASE_*`
+values are public project identifiers (not secrets); real secrets never belong in
+the repo — keep any of those in gitignored `.env*.local` files or Cloud Secret
+Manager.
