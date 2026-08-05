@@ -4,120 +4,135 @@ Guidance for AI assistants (Claude Code and others) working in this repository.
 
 ## Project overview
 
-**Ankylosingspondylitis** is an application for tracking Ankylosing Spondylitis
+**Ankylosing Spondylitis** is a web app for tracking Ankylosing Spondylitis
 (AS) — a form of inflammatory arthritis affecting the spine and sacroiliac
-joints. The goal is to let a person living with AS log symptoms, medication,
-activity, and other disease markers over time so they can spot trends and share
-data with clinicians.
+joints. A person living with AS can record the two standard patient-reported
+instruments over time, see them scored automatically, and watch the trend:
 
-> **Status: greenfield.** As of this writing the repository contains only
-> `README.md` and `.gitignore` — there is no application code, `package.json`,
-> or build tooling yet. Most of this document therefore describes the *intended*
-> setup (inferred from `.gitignore`) plus the conventions to follow as the code
-> is written. When you add real structure, **update this file to match reality**
-> and remove the "intended / not yet present" caveats.
+- **BASDAI** — Bath AS Disease Activity Index (6 questions, 0–10 each).
+- **BASFI** — Bath AS Functional Index (10 questions, 0–10 each).
 
-## Intended tech stack
+Each questionnaire uses 0–10 sliders, is auto-scored on submit, saved to the
+signed-in user's Firestore data, and plotted on a trend dashboard.
 
-The committed `.gitignore` is the standard **Create Next App** template — it
-ignores `/.next/`, `/out/`, `next-env.d.ts`, `*.tsbuildinfo`, `/.pnp`,
-`.pnp.js`, and `.vercel`. That strongly signals the planned foundation:
+## Tech stack
 
-- **Framework:** Next.js (React)
-- **Language:** TypeScript
-- **Deployment target:** Vercel
-- **Package manager:** npm or Yarn (both `npm-debug.log*` and `yarn-*.log`
-  are ignored; Yarn PnP entries are present but PnP is not required). Pick one
-  and add its lockfile — do not commit both `package-lock.json` and
-  `yarn.lock`.
+| Layer      | Choice                                             |
+| ---------- | -------------------------------------------------- |
+| Framework  | Next.js 14 (App Router)                            |
+| Language   | TypeScript (strict)                                |
+| UI         | React 18 + Tailwind CSS (light/dark, `darkMode: media`) |
+| Auth       | Firebase Authentication (Google + email/password)  |
+| Database   | Cloud Firestore                                    |
+| Charts     | Recharts                                           |
+| Hosting    | Vercel                                             |
 
-Nothing above is locked in until the corresponding files exist. If the project
-is initialized with a different stack, treat the `.gitignore` as the weaker
-signal and update this section.
-
-## Bootstrapping the project
-
-If you are asked to scaffold the app, the `.gitignore` already anticipates a
-Next.js + TypeScript project. A conventional starting point:
+## Commands
 
 ```bash
-# From the repo root — scaffold in place, keeping the existing README/.gitignore
-npx create-next-app@latest . --typescript --eslint
+npm install       # install dependencies
+npm run dev       # local dev server at http://localhost:3000
+npm run build     # production build (also type-checks and lints)
+npm run start     # serve the production build
+npm run lint      # ESLint (next/core-web-vitals)
 ```
 
-After scaffolding, verify the generated `.gitignore` doesn't conflict with the
-committed one (merge, don't blindly overwrite), then confirm the toolchain runs
-before committing:
+There is no separate test runner yet. `npm run build` is the current gate — it
+type-checks and lints the whole app; keep it green.
 
-```bash
-npm install
-npm run dev      # local dev server
-npm run build    # production build
-npm run lint     # linting
+## Project structure
+
+```
+src/
+  app/                    # Next.js App Router
+    layout.tsx            # root layout: AuthProvider + NavBar
+    page.tsx              # dashboard (latest scores + trend)
+    login/page.tsx        # Google + email/password sign-in
+    basdai/page.tsx       # BASDAI questionnaire
+    basfi/page.tsx        # BASFI questionnaire
+    history/page.tsx      # full history: trend chart + table
+    globals.css           # Tailwind layers + base styles
+  components/
+    AuthProvider.tsx      # auth context (useAuth); wraps the app
+    AuthGate.tsx          # redirects unauthenticated users to /login
+    NavBar.tsx            # top navigation
+    QuestionnaireForm.tsx # reusable BASDAI/BASFI form + live scoring
+    ScaleSlider.tsx       # one 0–10 slider question
+    TrendChart.tsx        # Recharts line chart (BASDAI + BASFI)
+    useEntries.ts         # hook: load the user's entries
+  lib/
+    firebase.ts           # lazy Firebase init (SSR-safe), isFirebaseConfigured()
+    firestore.ts          # saveEntry / getEntries (users/{uid}/entries)
+    scoring.ts            # basdaiScore, basfiScore, severity bands
+    questions.ts          # BASDAI/BASFI question definitions (slider config)
+    types.ts              # Entry / NewEntry / InstrumentType
+firestore.rules           # per-user security rules
+.env.example              # required NEXT_PUBLIC_FIREBASE_* variables
 ```
 
-Once these scripts exist, replace this section with the *actual* commands and
-document any project-specific scripts, environment variables, and test runner.
+## Key conventions
+
+- **Firebase is initialised lazily** (`getFirebaseAuth()`, `getDb()` in
+  `lib/firebase.ts`) so modules are safe to import during the server build. Do
+  not call `getAuth`/`getFirestore` at module top level.
+- **Client components** (`"use client"`) own all Firebase interaction. Anything
+  that touches auth or Firestore runs in the browser.
+- **Scores are 0–10.** BASDAI = `(Q1+Q2+Q3+Q4 + (Q5+Q6)/2) / 5`; BASFI = mean
+  of the 10 answers. Scoring lives only in `lib/scoring.ts` — reuse it, don't
+  reinvent it. BASDAI Q6 (stiffness duration) stores the 0–10 mapped value
+  (0h→0, ½h→2.5, 1h→5, 1½h→7.5, 2h→10), configured in `lib/questions.ts`.
+- **Adding a question or instrument** is a data change in `lib/questions.ts`
+  (plus scoring if it's a new instrument); the form and slider render from that
+  config.
+- **TypeScript-first:** `strict` is on; avoid `any` where a real type is
+  practical. `@/*` maps to `src/*`.
+- **Match surrounding code:** follow the existing Tailwind/utility patterns and
+  the `brand` colour scale in `tailwind.config.ts`.
+- **Keep this file current:** when you add tooling, scripts, routes, or
+  architectural decisions, update this map.
+
+## Environment / secrets
+
+- Firebase config is read from `NEXT_PUBLIC_FIREBASE_*` env vars (see
+  `.env.example`). These identify the project and ship to the browser; access is
+  protected by `firestore.rules`, not by hiding them.
+- `.env`, `.env*.local`, and `*.pem` are gitignored — **never commit secrets or
+  real credentials.** Set the same vars in Vercel's environment settings.
 
 ## Development workflow
 
-### Branching
-
-- Do all work on the designated feature branch — currently
-  **`claude/claude-md-docs-evr1lw`** — created from the latest `main`.
+- Work on the designated feature branch (currently
+  **`claude/claude-md-docs-evr1lw`**), created from the latest `main`.
 - **Never** push directly to `main`.
-- Keep commits focused with clear, descriptive messages.
-
-### Git push and PRs
-
-- Push with `git push -u origin <branch-name>`.
-- On network failures, retry with exponential backoff (2s, 4s, 8s, 16s).
-- After pushing, open a **draft** pull request for the branch if no open PR
-  already exists for it.
-- If a PR for the branch has already been merged, treat new work as a fresh
-  change: restart the branch from the latest `main`, then push and open a new
-  PR — do not stack new commits on already-merged history.
-
-### Environment / secrets
-
-- All `.env`, `.env*.local` files are gitignored — **never commit secrets**.
-- `*.pem` files are ignored; keep keys and certificates out of the repo.
-
-## Conventions
-
-- **TypeScript-first:** prefer typed code and avoid `any` where a real type is
-  practical.
-- **Match surrounding code:** once a codebase exists, follow its existing
-  naming, formatting, and structural idioms rather than introducing new ones.
-- **Keep this file current:** whenever you add tooling, scripts, directories, or
-  architectural decisions, reflect them here so the next assistant has an
-  accurate map.
+- Push with `git push -u origin <branch-name>`; retry with exponential backoff
+  on network errors.
+- After pushing, open a **draft** PR if none is open for the branch. If the
+  branch's PR is already merged, restart from the latest `main` and open a new
+  PR — don't stack new commits on merged history.
 
 ## Domain notes (Ankylosing Spondylitis)
 
-This is a **health-tracking** application, so a few domain considerations should
-shape design decisions:
-
-- **Sensitive data.** Symptom, medication, and health logs are personal medical
-  data. Favor privacy-preserving defaults, be deliberate about where data is
-  stored and transmitted, and avoid sending health data to third parties without
-  a clear reason.
-- **Common tracked signals for AS** (useful when modeling data): pain level and
-  location (spine, sacroiliac, peripheral joints), morning stiffness duration,
-  fatigue, flare occurrences, medication adherence (e.g. NSAIDs, biologics),
-  exercise/physical therapy, sleep quality, and mood. Validated instruments such
-  as **BASDAI** (disease activity) and **BASFI** (functional index) are the kind
-  of standardized scores this app may want to support.
-- **Not medical advice.** The app records and visualizes user-entered data; it
-  should not present itself as a diagnostic tool or give clinical advice.
+- **Sensitive data.** Symptom logs are personal medical data. Keep the
+  privacy-preserving default (entries scoped to the signed-in user), be
+  deliberate about storage/transmission, and don't send health data to third
+  parties without a clear reason.
+- **Instruments.** BASDAI (disease activity) and BASFI (functional index) are
+  the validated scores this app implements. Common AS signals more generally:
+  pain and its location (spine, sacroiliac, peripheral joints), morning
+  stiffness duration, fatigue, flares, medication adherence (NSAIDs, biologics),
+  exercise/physical therapy, sleep, and mood.
+- **Not medical advice.** The app records and visualises user-entered data; it
+  must not present itself as a diagnostic tool or give clinical advice. The
+  severity bands in `lib/scoring.ts` are informational only.
 
 ## Quick reference
 
 | Item | Value |
 | --- | --- |
-| Purpose | Track Ankylosing Spondylitis symptoms over time |
-| Intended stack | Next.js + TypeScript (inferred from `.gitignore`) |
-| App code present? | Not yet — greenfield |
+| Purpose | Track AS disease activity (BASDAI) and function (BASFI) over time |
+| Stack | Next.js 14 + TypeScript + Tailwind + Firebase + Recharts |
+| App code present? | Yes |
+| Build gate | `npm run build` (type-check + lint) |
 | Working branch | `claude/claude-md-docs-evr1lw` |
 | Protected branch | `main` (never push directly) |
-| Secrets | Keep in gitignored `.env*` files only |
+| Secrets | `NEXT_PUBLIC_FIREBASE_*` in gitignored `.env*.local` / Vercel only |
