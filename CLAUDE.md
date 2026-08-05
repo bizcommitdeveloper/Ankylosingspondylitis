@@ -46,7 +46,9 @@ type-checks and lints the whole app; keep it green.
 src/
   app/                    # Next.js App Router
     layout.tsx            # root layout: AuthProvider + NavBar
-    page.tsx              # dashboard (latest scores + trend)
+    page.tsx              # dashboard (members); routes signed-out users to /welcome
+    welcome/page.tsx      # public onboarding / landing page
+    learn/page.tsx        # public education: AS overview + instrument reference
     login/page.tsx        # Google + email/password sign-in
     basdai/page.tsx       # BASDAI questionnaire
     basfi/page.tsx        # BASFI questionnaire
@@ -55,16 +57,18 @@ src/
   components/
     AuthProvider.tsx      # auth context (useAuth); wraps the app
     AuthGate.tsx          # redirects unauthenticated users to /login
-    NavBar.tsx            # top navigation
-    QuestionnaireForm.tsx # reusable BASDAI/BASFI form + live scoring
+    NavBar.tsx            # top navigation (signed-in + signed-out states)
+    QuestionnaireForm.tsx # reusable BASDAI/BASFI form + live scoring + info panel
     ScaleSlider.tsx       # one 0–10 slider question
     TrendChart.tsx        # Recharts line chart (BASDAI + BASFI)
+    icons.tsx             # inline SVG icon set (no external assets)
     useEntries.ts         # hook: load the user's entries
   lib/
     firebase.ts           # lazy Firebase init (SSR-safe), isFirebaseConfigured()
     firestore.ts          # saveEntry / getEntries (users/{uid}/entries)
     scoring.ts            # basdaiScore, basfiScore, severity bands
     questions.ts          # BASDAI/BASFI question definitions (slider config)
+    content.ts            # patient-facing educational copy + sources (single source)
     types.ts              # Entry / NewEntry / InstrumentType
 firestore.rules           # per-user security rules
 apphosting.yaml           # Firebase App Hosting: run config + NEXT_PUBLIC_* env
