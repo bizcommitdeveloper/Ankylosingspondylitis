@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/components/AuthProvider";
@@ -57,6 +58,9 @@ export default function LoginPage() {
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
           Sign in to track your BASDAI and BASFI scores over time.
         </p>
+        <Link href="/welcome" className="mt-2 inline-block text-xs font-medium text-brand-700 hover:underline dark:text-brand-300">
+          New here? See how it works →
+        </Link>
       </div>
 
       {!configured ? (

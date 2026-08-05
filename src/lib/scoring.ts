@@ -36,24 +36,76 @@ export function computeScore(type: InstrumentType, answers: number[]): number {
 
 export interface Severity {
   label: string;
+  /** One short, hedged sentence of context. Informational only. */
+  description: string;
   /** Tailwind text colour class. */
   className: string;
+  /** Tailwind classes for a coloured pill/badge. */
+  badgeClassName: string;
 }
 
+const TONE = {
+  calm: {
+    className: "text-brand-700 dark:text-brand-300",
+    badgeClassName: "bg-brand-100 text-brand-800 dark:bg-brand-900 dark:text-brand-200",
+  },
+  moderate: {
+    className: "text-amber-600 dark:text-amber-400",
+    badgeClassName: "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-200",
+  },
+  high: {
+    className: "text-red-600 dark:text-red-400",
+    badgeClassName: "bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-200",
+  },
+} as const;
+
 /**
- * Interpretation bands. A BASDAI of >= 4 is the widely used threshold for
- * "active disease". BASFI has no formal cut-off, so we band it descriptively.
- * These are informational only — the app does not give clinical advice.
+ * Interpretation bands. For BASDAI, a score of >= 4 is the long-standing
+ * threshold used to describe "active disease"; below that we split at 2.5,
+ * roughly the low-activity level seen in cohort studies. BASFI has no formal
+ * clinical cut-off, so it is banded descriptively. These bands are
+ * informational only — the app does not give clinical advice.
  */
 export function severity(type: InstrumentType, score: number): Severity {
   if (type === "basdai") {
     if (score >= 4) {
-      return { label: "Active disease (≥ 4)", className: "text-red-600 dark:text-red-400" };
+      return {
+        label: "Active disease",
+        description: "At or above the score of 4 commonly used to describe active AS — worth reviewing with your clinician.",
+        ...TONE.high,
+      };
     }
-    return { label: "Below active threshold", className: "text-brand-700 dark:text-brand-300" };
+    if (score >= 2.5) {
+      return {
+        label: "Moderate activity",
+        description: "Above a typical low-activity level, but below the usual active-disease threshold of 4. Keep an eye on the trend.",
+        ...TONE.moderate,
+      };
+    }
+    return {
+      label: "Lower activity",
+      description: "Below the score of 4 often used to describe active disease.",
+      ...TONE.calm,
+    };
   }
-  // BASFI
-  if (score >= 7) return { label: "High functional limitation", className: "text-red-600 dark:text-red-400" };
-  if (score >= 4) return { label: "Moderate functional limitation", className: "text-amber-600 dark:text-amber-400" };
-  return { label: "Low functional limitation", className: "text-brand-700 dark:text-brand-300" };
+  // BASFI — no formal cut-off; bands are descriptive.
+  if (score >= 7) {
+    return {
+      label: "High limitation",
+      description: "Everyday activities are hard right now. Watch it alongside BASDAI and mention it to your clinician.",
+      ...TONE.high,
+    };
+  }
+  if (score >= 4) {
+    return {
+      label: "Moderate limitation",
+      description: "Some activities are harder than easy. The trend over time matters more than any single score.",
+      ...TONE.moderate,
+    };
+  }
+  return {
+    label: "Low limitation",
+    description: "Most everyday activities are relatively easy at the moment.",
+    ...TONE.calm,
+  };
 }

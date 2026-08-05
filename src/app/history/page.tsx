@@ -17,7 +17,11 @@ function EntryRow({ entry }: { entry: Entry }) {
       <td className="py-3 pr-4 text-sm font-semibold tabular-nums text-slate-900 dark:text-white">
         {entry.score.toFixed(1)}
       </td>
-      <td className={`py-3 pr-4 text-xs font-medium ${band.className}`}>{band.label}</td>
+      <td className="py-3 pr-4">
+        <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${band.badgeClassName}`} title={band.description}>
+          {band.label}
+        </span>
+      </td>
       <td className="max-w-[16rem] truncate py-3 text-sm text-slate-500 dark:text-slate-400" title={entry.note}>
         {entry.note || "—"}
       </td>
