@@ -23,7 +23,7 @@ signed-in user's Firestore data, and plotted on a trend chart.
 | Framework   | Expo (React Native), SDK 57                         |
 | Language    | TypeScript (strict)                                 |
 | Navigation  | expo-router (file-based, `app/`)                    |
-| Auth        | Firebase Authentication (email/password + Google)   |
+| Auth        | Firebase Authentication (Google Sign-In only)       |
 | Database    | Cloud Firestore                                     |
 | Charts      | react-native-svg (hand-rolled line chart)           |
 | Sliders     | @react-native-community/slider                      |
@@ -86,8 +86,10 @@ firebase.json/.firebaserc # Firebase CLI config (Firestore rules deploy)
   the small `declare module "firebase/auth"` augmentation — the RN persistence
   helper exists at runtime but is missing from the published types.
 - **Env vars are `EXPO_PUBLIC_*`** (embedded in the bundle; public identifiers,
-  not secrets). Config presence is checked by `isFirebaseConfigured()`; Google
-  sign-in is gated on `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` and hidden when absent.
+  not secrets). Config presence is checked by `isFirebaseConfigured()`. **Google
+  is the only sign-in method** (`expo-auth-session` → `signInWithCredential`);
+  it's gated on `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID`, and the login screen shows a
+  "not configured" notice when it's absent.
 - **Scores are 0–10.** BASDAI = `(Q1+Q2+Q3+Q4 + (Q5+Q6)/2) / 5`; BASFI = mean of
   the 10 answers. Scoring lives only in `lib/scoring.ts`. BASDAI Q6 (stiffness
   duration) stores the 0–10 mapped value (0h→0 … 2h→10), configured in
