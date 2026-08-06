@@ -58,18 +58,27 @@ notice instead of a dead button.
 
 ## Building for the App Store & Google Play
 
-This is an Expo app, so use **EAS Build**:
+This is an Expo app, so use **EAS Build**. Build profiles live in
+[`eas.json`](./eas.json): `preview` (installable **APK** / internal iOS build,
+great for phone testing) and `production` (store-ready **AAB** / App Store).
 
 ```bash
 npm i -g eas-cli
-eas login
-eas build:configure
-eas build --platform ios       # or android, or all
-eas submit --platform ios      # upload to App Store Connect / Play Console
+eas login                              # your Expo account (run this yourself)
+
+# Set the EXPO_PUBLIC_* config for cloud builds (they aren't read from
+# .env.local, which is gitignored and never uploaded):
+eas env:create --name EXPO_PUBLIC_FIREBASE_API_KEY --value "…"   # repeat per var
+
+eas build --profile preview --platform android   # → downloadable APK
+eas build --profile preview --platform ios       # → iOS build (needs Apple acct)
+eas submit --profile production --platform ios    # upload to App Store Connect
 ```
 
-- **Apple** requires the Apple Developer Program ($99/yr); **Google Play** a
-  one-time $25 developer registration.
+- **Android testing is free:** the `preview` APK installs on any Android phone,
+  Google sign-in included.
+- **iOS on a physical iPhone** needs the **Apple Developer Program ($99/yr)**
+  (TestFlight or ad-hoc); **Google Play** is a one-time $25 registration.
 - Both stores ask for a data-safety / privacy declaration — this app stores
   personal health entries per user in your Firestore project and shares nothing
   with third parties.
