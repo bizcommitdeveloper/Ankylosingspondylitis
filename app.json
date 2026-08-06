@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Ankylosing Spondylitis",
+    "slug": "ankylosing-spondylitis",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "astracker",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.astracker.app"
+    },
+    "android": {
+      "package": "com.astracker.app",
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": ["expo-router", "expo-web-browser"]
+  }
+}
