@@ -132,6 +132,29 @@ firebase.json/.firebaserc # Firebase CLI config (Firestore rules deploy)
   (`com.astracker.app`) and the `astracker` deep-link scheme (needed for Google
   auth redirects).
 
+## Developing & testing from mobile (no Mac)
+
+This project is developed entirely from a phone: Claude Code (web) edits and
+builds in a cloud sandbox and pushes to GitHub — no local Mac or Xcode is needed
+for coding. Testing without a Mac:
+
+- **Expo Go (fastest iteration).** Install Expo Go on the phone, run
+  `npx expo start --tunnel` in the session, open the link. Great for UI and
+  logic. Google sign-in via `expo-auth-session` needs the web client ID / Expo
+  proxy to behave inside Expo Go.
+- **EAS Build (cloud, the real app).** `eas build` compiles on Expo's servers.
+  - **Android:** build a `preview` APK, download and install on any Android
+    phone — free, and Google sign-in works in this dev build.
+  - **iOS:** installing on a physical iPhone needs a paid **Apple Developer**
+    account ($99/yr) via TestFlight or ad-hoc internal distribution. No Mac is
+    required, but the paid account is.
+- **Simulators/emulators** (`npm run ios` / `npm run android`) require a
+  Mac / Android Studio — not part of the phone-only flow.
+
+`eas login && eas build` must be run by the project owner (it needs their Expo
+account); Claude cannot log in on their behalf. Optional `eas.json` build
+profiles can be added to standardise the Android-APK and iOS builds.
+
 ## Domain notes (Ankylosing Spondylitis)
 
 - **Sensitive data.** Symptom logs are personal medical data. Keep the
