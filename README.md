@@ -17,7 +17,7 @@ to your account, and plotted on a trend chart.
 
 - **Expo** (React Native) + **TypeScript**
 - **expo-router** for navigation (file-based)
-- **Firebase** — Authentication (email/password + Google) and Cloud Firestore
+- **Firebase** — Authentication (Google Sign-In) and Cloud Firestore
 - **react-native-svg** for the trend chart, **@react-native-community/slider**
   for the 0–10 inputs
 - Distributed via the **Apple App Store** and **Google Play** (built with EAS)
@@ -38,20 +38,23 @@ Useful scripts: `npm run ios`, `npm run android`, `npm run web`,
 1. Create a Firebase project and add a **Web app** (the JS SDK is used inside
    React Native). Copy the config values into `.env.local` as the
    `EXPO_PUBLIC_FIREBASE_*` variables (see [`.env.example`](./.env.example)).
-2. **Authentication → Sign-in method:** enable **Email/Password**. Enable
-   **Google** too if you want Google sign-in (see below).
+2. **Authentication → Sign-in method:** enable **Google** (the only sign-in
+   method — see the setup step below).
 3. **Firestore Database:** create a database and publish the rules from
    [`firestore.rules`](./firestore.rules) — each user can only read/write their
    own data under `users/{uid}`. From the CLI:
    `firebase deploy --only firestore:rules` (set your project id in
    [`.firebaserc`](./.firebaserc) first).
 
-### Google Sign-In (optional)
+### Google Sign-In (required)
 
-Mobile Google sign-in uses `expo-auth-session`, not the web popup flow. Create
-OAuth client IDs (Google Cloud console / Firebase Auth Google provider) and set
-`EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` (plus the iOS/Android client IDs). If these
-are blank, the app cleanly shows **email/password only** — no broken button.
+Google is the only sign-in method. Mobile Google sign-in uses `expo-auth-session`,
+not the web popup flow. Create OAuth client IDs (Google Cloud console / Firebase
+Auth Google provider) and set `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` plus the
+`EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID` / `EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID`.
+Register the app's redirect (the `astracker` scheme in `app.json`) with each
+client. Until these are set, the sign-in screen shows a short "not configured"
+notice instead of a dead button.
 
 ## Building for the App Store & Google Play
 

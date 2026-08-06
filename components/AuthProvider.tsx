@@ -1,10 +1,8 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import {
   GoogleAuthProvider,
-  createUserWithEmailAndPassword,
   onAuthStateChanged,
   signInWithCredential,
-  signInWithEmailAndPassword,
   signOut,
   type User,
 } from "firebase/auth";
@@ -15,8 +13,6 @@ interface AuthContextValue {
   loading: boolean;
   configured: boolean;
   googleConfigured: boolean;
-  signInWithEmail: (email: string, password: string) => Promise<void>;
-  registerWithEmail: (email: string, password: string) => Promise<void>;
   signInWithGoogleIdToken: (idToken: string) => Promise<void>;
   logout: () => Promise<void>;
 }
@@ -46,12 +42,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loading,
       configured,
       googleConfigured,
-      signInWithEmail: async (email, password) => {
-        await signInWithEmailAndPassword(getFirebaseAuth(), email, password);
-      },
-      registerWithEmail: async (email, password) => {
-        await createUserWithEmailAndPassword(getFirebaseAuth(), email, password);
-      },
       signInWithGoogleIdToken: async (idToken) => {
         const credential = GoogleAuthProvider.credential(idToken);
         await signInWithCredential(getFirebaseAuth(), credential);
