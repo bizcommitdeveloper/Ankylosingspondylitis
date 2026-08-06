@@ -1,0 +1,11 @@
+rules_version = '2';
+
+// Each user can only read and write documents under their own /users/{uid} tree.
+// Health data is private to the account that created it.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}
