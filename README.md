@@ -1,70 +1,75 @@
 # Ankylosing Spondylitis
 
-A web app to track **Ankylosing Spondylitis** over time. It captures the two
-standard patient-reported instruments and charts how they move:
+A **mobile app** (iOS + Android) to track **Ankylosing Spondylitis** over time.
+It captures the two standard patient-reported instruments and charts how they
+move:
 
 - **BASDAI** — Bath Ankylosing Spondylitis Disease Activity Index (6 questions).
 - **BASFI** — Bath Ankylosing Spondylitis Functional Index (10 questions).
 
 Each questionnaire is filled in with 0–10 sliders, scored automatically, saved
-to your account, and plotted on a trend chart so you can spot patterns and share
-them with a clinician.
+to your account, and plotted on a trend chart.
 
 > This tool records and visualises your own entries. It is **not** a diagnostic
 > tool and does not provide medical advice.
 
 ## Tech stack
 
-- **Next.js 14** (App Router) + **React 18** + **TypeScript**
-- **Tailwind CSS** for styling (calm, clinical, light/dark)
-- **Firebase** — Authentication (Google + email/password), Cloud Firestore, and
-  **App Hosting** (server-side rendering on Cloud Run)
-- **Recharts** for the trend charts
+- **Expo** (React Native) + **TypeScript**
+- **expo-router** for navigation (file-based)
+- **Firebase** — Authentication (email/password + Google) and Cloud Firestore
+- **react-native-svg** for the trend chart, **@react-native-community/slider**
+  for the 0–10 inputs
+- Distributed via the **Apple App Store** and **Google Play** (built with EAS)
 
 ## Getting started
 
 ```bash
 npm install
-cp .env.example .env.local   # then fill in your Firebase config
-npm run dev                  # http://localhost:3000
+cp .env.example .env.local     # then fill in your Firebase config
+npx expo start                 # open in Expo Go, or press i / a for a simulator
 ```
 
-Other scripts: `npm run build` (production build), `npm run start` (serve the
-build), `npm run lint`.
+Useful scripts: `npm run ios`, `npm run android`, `npm run web`,
+`npm run typecheck`, `npm run lint`.
 
 ## Firebase setup
 
-1. Create a Firebase project and add a **Web app** to it.
-2. In **Authentication → Sign-in method**, enable **Google** and
-   **Email/Password**.
-3. In **Firestore Database**, create a database and publish the rules from
-   [`firestore.rules`](./firestore.rules) (each user can only read/write their
-   own data under `users/{uid}`).
-4. Copy the web SDK config values into `.env.local` (see
-   [`.env.example`](./.env.example)).
+1. Create a Firebase project and add a **Web app** (the JS SDK is used inside
+   React Native). Copy the config values into `.env.local` as the
+   `EXPO_PUBLIC_FIREBASE_*` variables (see [`.env.example`](./.env.example)).
+2. **Authentication → Sign-in method:** enable **Email/Password**. Enable
+   **Google** too if you want Google sign-in (see below).
+3. **Firestore Database:** create a database and publish the rules from
+   [`firestore.rules`](./firestore.rules) — each user can only read/write their
+   own data under `users/{uid}`. From the CLI:
+   `firebase deploy --only firestore:rules` (set your project id in
+   [`.firebaserc`](./.firebaserc) first).
 
-## Deploying to Firebase App Hosting
+### Google Sign-In (optional)
 
-App Hosting builds and serves the full Next.js app (server-side rendering) from
-your GitHub repo. It requires the **Blaze** (pay-as-you-go) plan.
+Mobile Google sign-in uses `expo-auth-session`, not the web popup flow. Create
+OAuth client IDs (Google Cloud console / Firebase Auth Google provider) and set
+`EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` (plus the iOS/Android client IDs). If these
+are blank, the app cleanly shows **email/password only** — no broken button.
 
-1. Upgrade your Firebase project to the **Blaze** plan.
-2. In the Firebase console, open **Build → App Hosting → Get started** and
-   create a backend, connecting this GitHub repo and the branch to deploy
-   (e.g. `main`).
-3. App Hosting reads [`apphosting.yaml`](./apphosting.yaml) for run settings and
-   environment variables — replace the placeholder `NEXT_PUBLIC_FIREBASE_*`
-   values there with your project's web config.
-4. In Firebase **Authentication → Settings → Authorized domains**, add your App
-   Hosting domain (e.g. `your-backend--your-project.web.app`) so sign-in works
-   in production.
-5. Push to the connected branch — App Hosting builds with Cloud Build and rolls
-   out automatically.
+## Building for the App Store & Google Play
 
-Prefer the CLI? `npm i -g firebase-tools`, `firebase login`, then
-`firebase init apphosting`. Publish the Firestore rules with
-`firebase deploy --only firestore:rules` (uses [`firebase.json`](./firebase.json)
-and [`.firebaserc`](./.firebaserc) — set your project ID there first).
+This is an Expo app, so use **EAS Build**:
+
+```bash
+npm i -g eas-cli
+eas login
+eas build:configure
+eas build --platform ios       # or android, or all
+eas submit --platform ios      # upload to App Store Connect / Play Console
+```
+
+- **Apple** requires the Apple Developer Program ($99/yr); **Google Play** a
+  one-time $25 developer registration.
+- Both stores ask for a data-safety / privacy declaration — this app stores
+  personal health entries per user in your Firestore project and shares nothing
+  with third parties.
 
 ## Data model
 
@@ -82,7 +87,6 @@ Entries are stored per user at `users/{uid}/entries/{entryId}`:
 ## Privacy
 
 Health data is personal. Entries are scoped to the signed-in user by Firestore
-security rules; nothing is shared with third parties. The `NEXT_PUBLIC_FIREBASE_*`
-values are public project identifiers (not secrets); real secrets never belong in
-the repo — keep any of those in gitignored `.env*.local` files or Cloud Secret
-Manager.
+security rules; nothing is shared with third parties. The `EXPO_PUBLIC_FIREBASE_*`
+values are public project identifiers (not secrets); keep any genuine secrets out
+of the repo and out of the bundle.
