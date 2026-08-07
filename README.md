@@ -1,8 +1,8 @@
 # Ankylosing Spondylitis
 
-A **mobile app** (iOS + Android) to track **Ankylosing Spondylitis** over time.
-It captures the two standard patient-reported instruments and charts how they
-move:
+A cross-platform app (**iOS + Android + web**) to track **Ankylosing
+Spondylitis** over time. It captures the two standard patient-reported
+instruments and charts how they move:
 
 - **BASDAI** — Bath Ankylosing Spondylitis Disease Activity Index (6 questions).
 - **BASFI** — Bath Ankylosing Spondylitis Functional Index (10 questions).
@@ -17,10 +17,12 @@ to your account, and plotted on a trend chart.
 
 - **Expo** (React Native) + **TypeScript**
 - **expo-router** for navigation (file-based)
-- **Firebase** — Authentication (Google Sign-In) and Cloud Firestore
+- **react-native-web** — the same code also runs in the browser
+- **Firebase** — Authentication (email/password + Google) and Cloud Firestore
 - **react-native-svg** for the trend chart, **@react-native-community/slider**
   for the 0–10 inputs
-- Distributed via the **Apple App Store** and **Google Play** (built with EAS)
+- Distributed via the **Apple App Store** and **Google Play** (built with EAS),
+  or deployed as a **web app**
 
 ## Getting started
 
@@ -38,23 +40,52 @@ Useful scripts: `npm run ios`, `npm run android`, `npm run web`,
 1. Create a Firebase project and add a **Web app** (the JS SDK is used inside
    React Native). Copy the config values into `.env.local` as the
    `EXPO_PUBLIC_FIREBASE_*` variables (see [`.env.example`](./.env.example)).
-2. **Authentication → Sign-in method:** enable **Google** (the only sign-in
-   method — see the setup step below).
+2. **Authentication → Sign-in method:** enable **Email/Password** (the simplest
+   way to test — no OAuth setup needed). Optionally also enable **Google** (see
+   the setup step below).
 3. **Firestore Database:** create a database and publish the rules from
    [`firestore.rules`](./firestore.rules) — each user can only read/write their
    own data under `users/{uid}`. From the CLI:
    `firebase deploy --only firestore:rules` (set your project id in
    [`.firebaserc`](./.firebaserc) first).
 
-### Google Sign-In (required)
+### Google Sign-In (optional)
 
-Google is the only sign-in method. Mobile Google sign-in uses `expo-auth-session`,
-not the web popup flow. Create OAuth client IDs (Google Cloud console / Firebase
-Auth Google provider) and set `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` plus the
-`EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID` / `EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID`.
-Register the app's redirect (the `astracker` scheme in `app.json`) with each
-client. Until these are set, the sign-in screen shows a short "not configured"
-notice instead of a dead button.
+Email/password works on its own — Google is an optional extra. Mobile Google
+sign-in uses `expo-auth-session`, not the web popup flow. Create OAuth client IDs
+(Google Cloud console / Firebase Auth Google provider) and set
+`EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` plus the `EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID` /
+`EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID`. Register the app's redirect (the
+`astracker` scheme in `app.json`) with each client. If these are blank, the
+Google button simply doesn't appear and email/password is used.
+
+## Run in a web browser (easiest way to test — no Mac, no app build)
+
+The same code runs on the web via react-native-web, so you can test without an
+APK/IPA or the app stores.
+
+**Locally:**
+
+```bash
+npx expo start --web        # opens http://localhost:8081 in your browser
+```
+
+**On your phone, without a Mac or app build** — deploy the static web build to
+Firebase Hosting and open the URL on your phone:
+
+```bash
+# Build the web bundle (EXPO_PUBLIC_* must be set — e.g. via .env.local):
+npx expo export --platform web        # outputs to ./dist
+
+# Deploy it (uses the hosting config already in firebase.json):
+npm i -g firebase-tools
+firebase login
+firebase deploy --only hosting        # prints a public https URL
+```
+
+Open that URL in Safari/Chrome on your iPhone and sign in with **email/password**
+— fully testable, nothing to install. (Enable Email/Password in Firebase Auth
+first; see the Firebase setup above.)
 
 ## Building for the App Store & Google Play
 

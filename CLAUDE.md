@@ -20,11 +20,12 @@ signed-in user's Firestore data, and plotted on a trend chart.
 
 | Layer       | Choice                                              |
 | ----------- | --------------------------------------------------- |
-| Framework   | Expo (React Native), SDK 57                         |
+| Framework   | Expo (React Native), SDK 57 — runs on iOS, Android, web |
 | Language    | TypeScript (strict)                                 |
 | Navigation  | expo-router (file-based, `app/`)                    |
-| Auth        | Firebase Authentication (Google Sign-In only)       |
+| Auth        | Firebase Authentication (email/password + Google)   |
 | Database    | Cloud Firestore                                     |
+| Web         | react-native-web (`expo export -p web` → deploy anywhere) |
 | Charts      | react-native-svg (hand-rolled line chart)           |
 | Sliders     | @react-native-community/slider                      |
 | Icons       | @expo/vector-icons (Ionicons)                       |
@@ -37,9 +38,11 @@ npm install            # install dependencies
 npx expo start         # dev server (Expo Go / simulators)
 npm run ios            # open iOS simulator
 npm run android        # open Android emulator
+npm run web            # run in a browser (react-native-web)
 npm run typecheck      # tsc --noEmit (the current gate)
 npm run lint           # expo lint
 npx expo export -p ios # bundle check (validates Metro resolution)
+npx expo export -p web # web build → dist/ (deployable to Firebase Hosting)
 ```
 
 There is no unit-test runner yet. Keep `npm run typecheck` green; an
@@ -59,13 +62,16 @@ app/                    # expo-router screens (file-based routes)
   history.tsx           # trend chart + entries list
 components/
   AuthProvider.tsx      # auth context (useAuth)
+  GoogleSignInButton.tsx# Google auth hook, mounted only when Google is configured
   QuestionnaireForm.tsx # reusable BASDAI/BASFI form + live scoring + info panel
   ScaleSlider.tsx       # one 0–10 slider question
   TrendChart.tsx        # react-native-svg line chart (BASDAI + BASFI)
   ui.tsx                # Card / Button / Badge atoms
   useEntries.ts         # hook: load the user's entries
 lib/
-  firebase.ts           # lazy Firebase init, RN AsyncStorage persistence, isFirebaseConfigured()
+  firebase.ts           # lazy Firebase init, isFirebaseConfigured()
+  authPersistence.ts    # native: initializeAuth + AsyncStorage persistence
+  authPersistence.web.ts# web: getAuth (browser persistence); Metro picks per platform
   firestore.ts          # saveEntry / getEntries (users/{uid}/entries)
   scoring.ts            # basdaiScore, basfiScore, severity() → tone bands
   questions.ts          # BASDAI/BASFI question definitions (slider config)
@@ -81,15 +87,18 @@ firebase.json/.firebaserc # Firebase CLI config (Firestore rules deploy)
 ## Key conventions
 
 - **Firebase is initialised lazily** (`getFirebaseApp()`, `getFirebaseAuth()`,
-  `getDb()` in `lib/firebase.ts`). Auth uses `initializeAuth` with
-  `getReactNativePersistence(AsyncStorage)` so sessions survive restarts. Note
-  the small `declare module "firebase/auth"` augmentation — the RN persistence
-  helper exists at runtime but is missing from the published types.
+  `getDb()` in `lib/firebase.ts`). Auth persistence is **platform-split**:
+  `authPersistence.ts` (native) uses `initializeAuth` +
+  `getReactNativePersistence(AsyncStorage)`; `authPersistence.web.ts` uses
+  `getAuth` (browser persistence). Metro loads the right one per platform, so the
+  RN-only helper (and its `declare module` type shim) never enters the web bundle.
+- **Auth methods:** email/password (works everywhere with no extra setup) plus
+  optional **Google**. The Google `useIdTokenAuthRequest` hook lives inside
+  `GoogleSignInButton`, which is mounted **only when
+  `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` is set** — on web that hook throws without a
+  client ID, so it must not run when Google is unconfigured.
 - **Env vars are `EXPO_PUBLIC_*`** (embedded in the bundle; public identifiers,
-  not secrets). Config presence is checked by `isFirebaseConfigured()`. **Google
-  is the only sign-in method** (`expo-auth-session` → `signInWithCredential`);
-  it's gated on `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID`, and the login screen shows a
-  "not configured" notice when it's absent.
+  not secrets). Config presence is checked by `isFirebaseConfigured()`.
 - **Scores are 0–10.** BASDAI = `(Q1+Q2+Q3+Q4 + (Q5+Q6)/2) / 5`; BASFI = mean of
   the 10 answers. Scoring lives only in `lib/scoring.ts`. BASDAI Q6 (stiffness
   duration) stores the 0–10 mapped value (0h→0 … 2h→10), configured in
