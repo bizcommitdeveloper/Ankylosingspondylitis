@@ -10,8 +10,6 @@
   --brand-dark: #0f766e;
   --brand-50: #e6f5f3;
   --on-brand: #ffffff;
-  --danger: #c2410c;
-  --danger-bg: #fff2e8;
   --shadow: 0 1px 2px rgba(15, 42, 40, 0.06), 0 2px 10px rgba(15, 42, 40, 0.05);
   --radius: 16px;
   --gutter: 16px;
@@ -31,8 +29,6 @@
     --brand-dark: #14b8a6;
     --brand-50: #10332e;
     --on-brand: #042019;
-    --danger: #fb923c;
-    --danger-bg: #351a0e;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 12px rgba(0, 0, 0, 0.3);
   }
 }
@@ -64,6 +60,9 @@ a {
   max-width: var(--max);
   margin: 0 auto;
   padding: 0 var(--gutter);
+}
+main.container {
+  padding-bottom: calc(24px + env(safe-area-inset-bottom));
 }
 
 /* Header */
@@ -362,90 +361,11 @@ ol.steps li::before {
   display: grid;
   place-items: center;
 }
-ul.bullets {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-  display: grid;
-  gap: 8px;
-}
-ul.bullets li {
-  display: flex;
-  gap: 10px;
-}
-ul.bullets li::before {
-  content: "";
-  flex: none;
-  width: 7px;
-  height: 7px;
-  margin-top: 8px;
-  border-radius: 50%;
-  background: var(--brand);
-}
-.block.warn {
-  background: var(--danger-bg);
-  border-color: color-mix(in srgb, var(--danger) 30%, var(--border));
-}
-.block.warn h2 svg {
-  color: var(--danger);
-}
-.block.warn ul.bullets li::before {
-  background: var(--danger);
-}
 .dose {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-weight: 600;
-}
-
-/* FAQ */
-details.faq {
-  border-top: 1px solid var(--border);
-  padding: 12px 0;
-}
-details.faq:first-of-type {
-  border-top: none;
-}
-details.faq summary {
-  cursor: pointer;
-  font-weight: 600;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: center;
-}
-details.faq summary::-webkit-details-marker {
-  display: none;
-}
-details.faq summary .plus {
-  color: var(--brand);
-  transition: transform 0.15s ease;
-  flex: none;
-}
-details.faq[open] summary .plus {
-  transform: rotate(45deg);
-}
-details.faq p {
-  margin: 10px 0 0;
-  color: var(--muted);
-}
-
-/* Footer */
-.site-footer {
-  border-top: 1px solid var(--border);
-  margin-top: 36px;
-  padding: 20px 0 calc(28px + env(safe-area-inset-bottom));
-  color: var(--muted);
-  font-size: 12px;
-}
-.site-footer .disclaimer {
-  background: var(--surface-alt);
-  border-radius: 12px;
-  padding: 12px 14px;
-  margin-bottom: 12px;
-  line-height: 1.5;
 }
 
 .empty {

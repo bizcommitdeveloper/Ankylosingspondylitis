@@ -5,9 +5,8 @@ Guidance for AI assistants working in this repository.
 ## Project
 
 **Physiosolution Exercises** — a responsive React website presenting 148
-physiotherapy exercises (16 categories) with step-by-step English instructions.
-Mobile/tablet-first. Instructions sourced from physiosolution.com (used with the
-owner's permission); exercise images are added later (placeholders for now).
+physiotherapy exercises (16 categories). Mobile/tablet-first. Exercise content
+is the owner's (Physiosolution); exercise media is being added.
 
 ## Stack
 
@@ -31,28 +30,34 @@ All content lives in `src/data/exercises.json`, loaded and typed via
 `exercisesInCategory`, `searchExercises`). The UI renders entirely from this
 data — adding/editing an exercise is a data change, not a code change.
 
-- Each exercise has: `slug`, `title`, `summary`, `whatItDoes`, `steps[]`,
-  `howMuch`, `commonMistakes[]`, `warnings[]`, `faqs[{q,a}]`, `category`,
-  `categorySlug`, `image` (null until supplied).
+- Each exercise has: `slug`, `title`, `summary` (one sentence: what it's for),
+  `steps[]`, `howMuch`, `category`, `categorySlug`, `image` (null until supplied).
 - **Images:** set `image` to a URL or a `public/`-relative path; cards and the
-  detail hero swap from placeholder to the image automatically
-  (`components/ImagePlaceholder.tsx`). No code change needed.
+  detail page swap from placeholder to the image automatically
+  (`components/ImagePlaceholder.tsx`).
+
+## Product decisions (keep these unless the owner asks otherwise)
+
+- **Exercise page is deliberately minimal** so it fits one phone screen: image,
+  title, summary, *How to do it* (steps), *How much*. The owner removed "What it
+  does", "Common mistakes", the stop-and-check warnings and FAQs — don't add
+  them back, and keep summaries free of references to removed sections.
+- **No footer.** The medical disclaimer, copyright and source attribution were
+  removed at the owner's request.
 
 ## Conventions
 
 - Routes: `/` (home: search + category grid), `/category/:slug`,
-  `/exercise/:slug`. Served as a SPA (Firebase Hosting rewrites all to
-  `index.html`).
-- Icons are inline SVGs in `components/icons.tsx` (`IconProps = SVGProps & {size?}`).
+  `/exercise/:slug`. Served as a SPA (hosts rewrite all paths to `index.html`).
+- Icons are inline SVGs in `components/icons.tsx` (`IconProps = SVGProps & {size?}`);
+  `tsconfig` has `noUnusedLocals`, so remove imports you stop using.
 - Keep styling in `styles.css` using the existing CSS variables; match the card
   and `.block` patterns already there.
-- Content disclaimer + Physiosolution attribution live in `components/Layout.tsx`
-  — keep them. This is informational, not medical advice.
 
 ## Deploy
 
-Static build → `dist/`. `firebase.json` is set up for Firebase Hosting
-(`firebase deploy --only hosting`). Any static host with an SPA fallback works.
+Connected to Vercel (push → preview; merge to `main` → production). Previews are
+behind Vercel Deployment Protection. `firebase.json` is an optional alternative.
 
 ## Workflow
 

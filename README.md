@@ -1,19 +1,15 @@
 # Physiosolution Exercises
 
 A responsive React website (tablet/mobile-first) that presents a library of
-**148 physiotherapy exercises** across **16 body areas**, each with clear,
-step-by-step English instructions:
+**148 physiotherapy exercises** across **16 body areas**. Each exercise page is
+kept short enough to fit on a phone screen:
 
-- **What it does** · **How to do it** (numbered steps) · **How much** ·
-  **Common mistakes** · **When to stop and get checked** · **FAQs**
-- Browse by area, or search across every exercise.
+- an image (placeholder until media is added),
+- a one-line summary of what the exercise is for,
+- **How to do it** — numbered steps,
+- **How much** — reps, holds and frequency.
 
-> **Images:** exercise photos/illustrations are **coming later** — each exercise
-> currently shows a tidy placeholder. When an `image` URL is added to the data,
-> it displays automatically (see "Adding images" below).
-
-> **Not medical advice.** The instructions are general guidance, not a personal
-> prescription.
+Browse by area, or search across every exercise.
 
 ## Tech stack
 
@@ -30,25 +26,22 @@ npm run build      # type-check + production build → dist/
 npm run preview    # preview the production build
 ```
 
-## Deploying (open it on your phone, no app build needed)
+## Deploying
 
-The build is a static site; `firebase.json` is preconfigured for **Firebase Hosting**:
+The repository is connected to **Vercel**: every push builds a preview, and
+merging to `main` deploys production. (Previews sit behind Vercel's Deployment
+Protection; turn it off in the Vercel project settings to share links publicly.)
+
+`firebase.json` is also included if you prefer Firebase Hosting:
 
 ```bash
 npm run build
-npm i -g firebase-tools
-firebase login
-firebase deploy --only hosting     # prints a public https URL to open on any device
+firebase deploy --only hosting
 ```
-
-(Any static host works — Netlify, Vercel, GitHub Pages, S3 — point it at `dist/`
-with a SPA fallback to `index.html`.)
 
 ## Content & data
 
-Exercise instructions are sourced from **physiosolution.com** (used with the
-owner's permission) and stored as structured data in
-[`src/data/exercises.json`](./src/data/exercises.json):
+All content lives in [`src/data/exercises.json`](./src/data/exercises.json):
 
 ```jsonc
 {
@@ -56,13 +49,9 @@ owner's permission) and stored as structured data in
   "exercises": [{
     "slug": "chin-tucks",
     "title": "Chin Tucks",
-    "summary": "…",
-    "whatItDoes": "…",
+    "summary": "Chin tucks for neck pain and forward head posture.",
     "steps": ["…"],
     "howMuch": "…",
-    "commonMistakes": ["…"],
-    "warnings": ["…"],
-    "faqs": [{ "q": "…", "a": "…" }],
     "category": "Neck Exercises",
     "categorySlug": "neck-exercises",
     "image": null
@@ -70,12 +59,11 @@ owner's permission) and stored as structured data in
 }
 ```
 
-### Adding images later
+### Adding images
 
-Set each exercise's `image` field in `exercises.json` to an image URL or a path
-under `public/` (e.g. `"/images/chin-tucks.jpg"`). The card thumbnails and the
-detail hero switch from the placeholder to the real image automatically — no
-code changes needed.
+Set an exercise's `image` field to a URL or a path under `public/` (e.g.
+`"/images/chin-tucks.gif"`). Cards and the detail page switch from the
+placeholder to the image automatically — no code changes needed.
 
 ## Project structure
 
@@ -88,13 +76,13 @@ src/
     exercises.json        # the 148-exercise dataset
     index.ts              # typed data + lookup/search helpers
   components/
-    Layout.tsx            # header + footer (disclaimer, attribution)
+    Layout.tsx            # sticky header
     Cards.tsx             # CategoryCard, ExerciseCard
     ImagePlaceholder.tsx  # shows a placeholder until image is set
     icons.tsx             # inline SVG icons
   pages/
     HomePage.tsx          # hero + search + category grid
     CategoryPage.tsx      # exercises within a category
-    ExercisePage.tsx      # full instructions for one exercise
-firebase.json             # Firebase Hosting config (serves dist/)
+    ExercisePage.tsx      # image, summary, steps, how much
+firebase.json             # optional Firebase Hosting config (serves dist/)
 ```

@@ -1,20 +1,11 @@
 import raw from "./exercises.json";
 
-export interface Faq {
-  q: string;
-  a: string;
-}
-
 export interface Exercise {
   slug: string;
   title: string;
   summary: string;
-  whatItDoes?: string;
   steps?: string[];
   howMuch?: string;
-  commonMistakes?: string[];
-  warnings?: string[];
-  faqs?: Faq[];
   category: string;
   categorySlug: string;
   image: string | null;
@@ -27,7 +18,6 @@ export interface Category {
 }
 
 interface Data {
-  generatedFrom: string;
   categories: Category[];
   exercises: Exercise[];
 }
