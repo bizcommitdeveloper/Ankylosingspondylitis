@@ -35,7 +35,7 @@ export function Layout({ children }: { children: ReactNode }) {
             If you have a recent injury or surgery, a diagnosed condition, or symptoms such as numbness, weakness or
             dizziness, get assessed before starting.
           </div>
-          Exercise instructions courtesy of Physiosolution. © Physiosolution. All rights reserved.
+          © Physiosolution. All rights reserved.
         </div>
       </footer>
     </>
