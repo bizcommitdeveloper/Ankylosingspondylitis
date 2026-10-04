@@ -27,17 +27,6 @@ export function Layout({ children }: { children: ReactNode }) {
       </header>
 
       <main className="container">{children}</main>
-
-      <footer className="site-footer">
-        <div className="container">
-          <div className="disclaimer">
-            <strong>Not medical advice.</strong> These instructions are general guidance, not a personal prescription.
-            If you have a recent injury or surgery, a diagnosed condition, or symptoms such as numbness, weakness or
-            dizziness, get assessed before starting.
-          </div>
-          © Physiosolution. All rights reserved.
-        </div>
-      </footer>
     </>
   );
 }
