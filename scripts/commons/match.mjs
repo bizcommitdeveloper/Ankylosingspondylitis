@@ -21,7 +21,7 @@ const STOP = new Set(["exercise", "exercises", "the", "and", "of", "a", "with", 
 const stem = (w) => w.replace(/(ings?|es|s)$/, "");
 const words = (s) =>
   s.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase().replace(/[^a-z0-9]+/g, " ").split(" ")
-    .filter((w) => w && !STOP.has(w)).map(stem);
+    .filter((w) => w && !STOP.has(w)).map(stem).filter(Boolean);
 const bare = (t) => t.replace(/^File:/, "");
 
 // Rank media kinds: animation > video > drawing > photo.

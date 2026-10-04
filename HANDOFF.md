@@ -33,8 +33,10 @@ standing rules.
 
 **What was done.** We built a list of exercise-related media from Wikimedia
 Commons and matched it against every exercise name:
-- `scripts/commons/pool.mjs` ran ~40 bulk searches and saved
-  `scripts/commons/data/pool.json`, about 7,500 file titles. The searches
+- `scripts/commons/pool.mjs` ran 37 of its 38 bulk searches and saved
+  `scripts/commons/data/pool.json`, about 8,000 file titles. The `"Setu Bandha"`
+  search was still waiting on rate limits when we stopped; running `pool.mjs`
+  again picks it up. The searches
   covered:
   - Everkinetic and the CDC set
   - exercise and stretching GIFs, videos and drawings
@@ -46,15 +48,20 @@ Commons and matched it against every exercise name:
   **[`docs/commons-candidates.md`](docs/commons-candidates.md)**, which lists
   all 148 exercises with their status and best matches.
 
-**Result: Commons has little physio-specific animation.** Counts are in
-`docs/commons-candidates.md`. Roughly two thirds of exercises have no name
-match at all, e.g.:
+**Result: Commons has little physio-specific animation.**
+
+| Status | Exercises |
+| --- | --- |
+| ✅ In use | 16 |
+| 🔎 Candidates to check by eye | 37 |
+| ❌ Checked, no usable match | 5 |
+| No name match on Commons | 90 |
+
+Exercises with no match include:
 - chin tucks
-- cat-cow
 - dead bug
 - clamshell
 - tummy time
-- breathing exercises
 - most neuro and paediatric exercises
 
 What each source turned out to contain:
@@ -63,7 +70,8 @@ What each source turned out to contain:
 | --- | --- | --- | --- |
 | CDC strength training (22 GIFs) | Public domain | Older-adult strength moves | **Used up:** 13 in use, the other 9 checked and don't match our steps |
 | Everkinetic (~1,090 drawings, start/end pairs) | CC BY-SA 3.0 | Mostly gym and machine moves | Physio-relevant pairs still to check: static neck side flexion, neck flexion/extension, balance board, hip adduction, internal cable rotation, side plank, front/lateral raises, leg lift |
-| Cancer Research UK diagrams | CC BY-SA 4.0 | Shoulder rehab after breast surgery | Still to check: *walk your fingers up the wall* (→ Wall Walks), *arm up your back* (→ internal-rotation stretch), shoulder and chest stretches |
+| Cancer Research UK diagrams | CC BY-SA 4.0 | Shoulder rehab after breast surgery; breathing | Still to check: *walk your fingers up the wall* (→ Wall Walks), *arm up your back* (→ internal-rotation stretch), shoulder and chest stretches, *abdominal breathing* (→ Diaphragmatic Breathing), *controlled breathing* (→ Deep Breathing / Pursed Lip) |
+| Yoga photos (*Yoga at Your Park* and others) | Various CC | Asanas | Still to check: Bidalasana + Bitilasana pair (→ Cat-Cow), Balasana (→ Child's Pose), Pavanamuktasana (→ Knee to Chest), cobra (→ McKenzie Extension) |
 | One-off drawings | Various | `Birddog exercise.svg`, `Bridge exercise.svg`, `Isometric exercise.svg`, `Kegel Excercise.svg`, `Tree standing onefoot.svg` | Still to check |
 | Videos | Various CC | Iliopsoas (hip-flexor) stretch video; a gym "exercise demonstration video" series | Still to check |
 

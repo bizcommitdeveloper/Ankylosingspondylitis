@@ -47,7 +47,8 @@
   "cat-cow-stretch": [
     "cat cow",
     "Marjaryasana",
-    "Bitilasana"
+    "Bitilasana",
+    "bidalasana"
   ],
   "cervical-rotation": [
     "neck rotation exercise"
@@ -70,10 +71,11 @@
     "doorway stretch",
     "pec stretch"
   ],
-  "child-s-pose": [
+  "childs-pose": [
     "child's pose",
     "Balasana",
-    "balasana"
+    "balasana",
+    "child pose"
   ],
   "chin-tucks": [
     "chin tuck exercise",
@@ -105,16 +107,18 @@
   "dead-bug": [
     "dead bug exercise"
   ],
-  "deep-breathing-and-thoracic-expansion": [
+  "deep-breathing-exercises": [
     "deep breathing",
-    "thoracic expansion"
+    "thoracic expansion",
+    "controlled breathing"
   ],
   "diaphragmatic-breathing": [
     "diaphragmatic breathing",
     "belly breathing",
-    "diaphragm breathing animation"
+    "diaphragm breathing animation",
+    "abdominal breathing"
   ],
-  "elbow-flexion-and-extension": [
+  "elbow-flexion-extension": [
     "elbow flexion extension"
   ],
   "elbow-isometric-exercises": [
@@ -127,14 +131,18 @@
     "fine motor skills",
     "pegboard"
   ],
-  "finger-flexion-and-extension": [
+  "finger-flexion-extension": [
     "finger flexion",
     "finger exercise"
+  ],
+  "forearm-pronation-supination": [
+    "pronation supination",
+    "forearm rotation exercise"
   ],
   "functional-movement-training": [
     "functional movement"
   ],
-  "functional-reach-exercises": [
+  "functional-reach": [
     "functional reach test"
   ],
   "functional-strengthening": [
@@ -180,7 +188,7 @@
     "kneeling lunge stretch",
     "Anjaneyasana"
   ],
-  "hip-rotation-exercises": [
+  "hip-rotation-exercise": [
     "hip rotation",
     "hip internal rotation"
   ],
@@ -207,7 +215,9 @@
   ],
   "knee-to-chest-stretch": [
     "knee to chest",
-    "Apanasana"
+    "Apanasana",
+    "pavanamuktasana",
+    "wind relieving pose"
   ],
   "levator-scapulae-stretch": [
     "levator scapulae stretch"
@@ -246,12 +256,8 @@
     "Bobath",
     "neurodevelopmental treatment"
   ],
-  "parkinson-s-exercise-program": [
+  "parkinsons-exercise-program": [
     "Parkinson exercise"
-  ],
-  "passive-assisted-and-active-range-of-motion": [
-    "range of motion exercise",
-    "passive range of motion"
   ],
   "pelvic-mobility-exercises": [
     "pelvic mobility",
@@ -281,11 +287,16 @@
     "pregnancy exercise"
   ],
   "pursed-lip-breathing": [
-    "pursed lip breathing"
+    "pursed lip breathing",
+    "controlled breathing"
   ],
   "quadriceps-sets": [
     "quad set",
     "quadriceps setting"
+  ],
+  "range-of-motion-exercises": [
+    "range of motion exercise",
+    "passive range of motion"
   ],
   "resistance-band-ankle-exercises": [
     "ankle resistance band",
@@ -478,15 +489,11 @@
     "wrist extensor stretch",
     "forearm stretch"
   ],
-  "wrist-flexion-and-extension": [
+  "wrist-flexion-extension": [
     "wrist curl",
     "wrist flexion extension"
   ],
   "wrist-flexor-stretch": [
     "wrist flexor stretch"
-  ],
-  "wrist-pronation-and-supination": [
-    "pronation supination",
-    "forearm rotation exercise"
   ]
 }

@@ -260,6 +260,12 @@
  "calf-stretch": [],
  "cat-cow-stretch": [
   {
+   "title": "File:Yoga at Your Park - Bidalasana.jpg",
+   "phrase": "bidalasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
    "title": "File:Yoga at Your Park - Bitilasana.jpg",
    "phrase": "bitilasana",
    "n": 1,
@@ -317,7 +323,32 @@
    "kind": "drawing"
   }
  ],
- "childs-pose": [],
+ "childs-pose": [
+  {
+   "title": "File:Hatha yoga child pose.jpg",
+   "phrase": "child's pose",
+   "n": 2,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Balasana .jpg",
+   "phrase": "balasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Balasana zamkovoi.jpg",
+   "phrase": "balasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Balasana.JPG",
+   "phrase": "balasana",
+   "n": 1,
+   "kind": "photo"
+  }
+ ],
  "chin-tucks": [],
  "clamshell-exercise": [],
  "coordination-exercises": [
@@ -442,8 +473,22 @@
  ],
  "crawling-exercises": [],
  "dead-bug": [],
- "deep-breathing-exercises": [],
- "diaphragmatic-breathing": [],
+ "deep-breathing-exercises": [
+  {
+   "title": "File:Diagram showing controlled breathing CRUK 113.svg",
+   "phrase": "controlled breathing",
+   "n": 2,
+   "kind": "drawing"
+  }
+ ],
+ "diaphragmatic-breathing": [
+  {
+   "title": "File:Diagram showing abdominal breathing CRUK 090.svg",
+   "phrase": "abdominal breathing",
+   "n": 2,
+   "kind": "drawing"
+  }
+ ],
  "dumbbell-exercises": [
   {
    "title": "File:Man Lifting Dumbbells GIF Animation Loop.gif",
@@ -1506,7 +1551,68 @@
  "elbow-isometric-exercises": [],
  "fall-prevention-exercises": [],
  "fine-motor-exercises": [],
- "finger-flexion-extension": [],
+ "finger-flexion-extension": [
+  {
+   "title": "File:Finger marching-CDC strength training for older adults.gif",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "gif"
+  },
+  {
+   "title": "File:Finger marching2-CDC strength training for older adults.gif",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "gif"
+  },
+  {
+   "title": "File:A-RIAMlamellipodin–talin–integrin-complex-forms-the-tip-of-sticky-fingers-that-guide-cell-migration-ncomms9492-s5.ogv",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "video"
+  },
+  {
+   "title": "File:A-RIAMlamellipodin–talin–integrin-complex-forms-the-tip-of-sticky-fingers-that-guide-cell-migration-ncomms9492-s6.ogv",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "video"
+  },
+  {
+   "title": "File:The-BTBPOZ-zinc-finger-protein-Broad-Z3-promotes-dendritic-outgrowth-during-metamorphic-remodeling-1749-8104-6-39-S1.ogv",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "video"
+  },
+  {
+   "title": "File:The-BTBPOZ-zinc-finger-protein-Broad-Z3-promotes-dendritic-outgrowth-during-metamorphic-remodeling-1749-8104-6-39-S2.ogv",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "video"
+  },
+  {
+   "title": "File:The-BTBPOZ-zinc-finger-protein-Broad-Z3-promotes-dendritic-outgrowth-during-metamorphic-remodeling-1749-8104-6-39-S3.ogv",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "video"
+  },
+  {
+   "title": "File:The-BTBPOZ-zinc-finger-protein-Broad-Z3-promotes-dendritic-outgrowth-during-metamorphic-remodeling-1749-8104-6-39-S4.ogv",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "video"
+  },
+  {
+   "title": "File:The-BTBPOZ-zinc-finger-protein-Broad-Z3-promotes-dendritic-outgrowth-during-metamorphic-remodeling-1749-8104-6-39-S5.ogv",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "video"
+  },
+  {
+   "title": "File:Diagram showing how to do a walk your fingers up the wall exercise after breast reconstruction surgery CRUK 146.svg",
+   "phrase": "finger exercise",
+   "n": 1,
+   "kind": "drawing"
+  }
+ ],
  "functional-movement-training": [],
  "functional-reach": [],
  "functional-strengthening": [
@@ -1868,25 +1974,7 @@
  "joint-replacement-rehabilitation-exercises": [],
  "kegel-exercises": [
   {
-   "title": "File:Tracing from the pelvic floor with and without corsets.gif",
-   "phrase": "pelvic floor exercise",
-   "n": 2,
-   "kind": "gif"
-  },
-  {
-   "title": "File:Three sequential ejaculations during multiple orgasms following pelvic floor muscle practice, 2026.webm",
-   "phrase": "pelvic floor exercise",
-   "n": 2,
-   "kind": "video"
-  },
-  {
    "title": "File:Ejercicios de Kegel.webm",
-   "phrase": "kegel",
-   "n": 1,
-   "kind": "video"
-  },
-  {
-   "title": "File:Man with erect penis doing kegel exercises.webm",
    "phrase": "kegel",
    "n": 1,
    "kind": "video"
@@ -1894,12 +1982,6 @@
   {
    "title": "File:Kegel Excercise.svg",
    "phrase": "kegel excercise",
-   "n": 2,
-   "kind": "drawing"
-  },
-  {
-   "title": "File:Overall position of the clitoral apparatus, and its attachment to the pelvis and parts of pelvic floor.png",
-   "phrase": "pelvic floor exercise",
    "n": 2,
    "kind": "drawing"
   },
@@ -1935,7 +2017,38 @@
   }
  ],
  "knee-extension-stretch": [],
- "knee-to-chest-stretch": [],
+ "knee-to-chest-stretch": [
+  {
+   "title": "File:Mr-yoga-twisting bound wind relieving pose.jpg",
+   "phrase": "wind relieving pose",
+   "n": 3,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Mr-yoga-wind relieving pose.jpg",
+   "phrase": "wind relieving pose",
+   "n": 3,
+   "kind": "photo"
+  },
+  {
+   "title": "File:A style of pavanamuktasana (cropped).JPG",
+   "phrase": "pavanamuktasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:A style of pavanamuktasana 1.JPG",
+   "phrase": "pavanamuktasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:A style of pavanamuktasana.JPG",
+   "phrase": "pavanamuktasana",
+   "n": 1,
+   "kind": "photo"
+  }
+ ],
  "levator-scapulae-stretch": [],
  "long-arc-quads": [],
  "lumbar-rotation-stretch": [],
@@ -2073,7 +2186,212 @@
    "kind": "drawing"
   }
  ],
- "mckenzie-extension": [],
+ "mckenzie-extension": [
+  {
+   "title": "File:Advanced version of cobra bhujangasana.png",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "drawing"
+  },
+  {
+   "title": "File:Advanced version of bhujangasana cobra pose.jpg",
+   "phrase": "cobra pose",
+   "n": 2,
+   "kind": "photo"
+  },
+  {
+   "title": "File:A style of bhujangasana.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Anil Shrikrishna Manekar - Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7392.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Ardha bhujangasana.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Ardha Bhujangasana.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7379.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7380.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7382.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7384.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7385.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7386.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7387.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7388.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7389.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7390.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7395.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2016-06-21 4944.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana in Yogasopana.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana Yoga-Asana Nina-Mel.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana zamkovoi.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana-legs-bended.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana, Heinz Grill 1992.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Bhujangasana.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Indian Navy personnel perform Bhujangasana on board INS Sunayna in 2015.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Maha bhujangasana.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Mrs Manekar - Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7391.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Mrs Manekar - Bhujangasana - International Day of Yoga Celebration - NCSM - Kolkata 2015-06-21 7393.JPG",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Padma bhujangasana 1.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Purna Bhujangasana.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Raja bhujangasana 2.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Stamp of India - 1991 - Colnect 164219 - Bhujangasana.jpeg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Vajra bhujangasana.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  },
+  {
+   "title": "File:Vivek bhujangasana.jpg",
+   "phrase": "bhujangasana",
+   "n": 1,
+   "kind": "photo"
+  }
+ ],
  "median-nerve-glides": [],
  "mini-squats": [],
  "motor-control-exercises": [],
@@ -2167,7 +2485,14 @@
  "post-surgery-exercises": [],
  "postnatal-core-exercises": [],
  "prenatal-mobility-exercises": [],
- "pursed-lip-breathing": [],
+ "pursed-lip-breathing": [
+  {
+   "title": "File:Diagram showing controlled breathing CRUK 113.svg",
+   "phrase": "controlled breathing",
+   "n": 2,
+   "kind": "drawing"
+  }
+ ],
  "quadriceps-sets": [],
  "quadriceps-stretch": [],
  "resistance-band-ankle-exercises": [],
