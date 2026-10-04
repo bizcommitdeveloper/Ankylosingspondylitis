@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getExercise } from "../data";
-import { ImagePlaceholder } from "../components/ImagePlaceholder";
+import { ExerciseMedia } from "../components/ExerciseMedia";
 import { Clock, Steps } from "../components/icons";
 
 export function ExercisePage() {
@@ -28,7 +28,7 @@ export function ExercisePage() {
         </Link>
       </div>
 
-      <ImagePlaceholder src={ex.image} alt={ex.title} />
+      <ExerciseMedia src={ex.image} alt={ex.title} credit={ex.imageCredit} />
 
       <h1>{ex.title}</h1>
       {ex.summary && <p className="lead">{ex.summary}</p>}

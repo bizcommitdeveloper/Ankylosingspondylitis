@@ -4,7 +4,7 @@ A responsive React website (tablet/mobile-first) that presents a library of
 **148 physiotherapy exercises** across **16 body areas**. Each exercise page is
 kept short enough to fit on a phone screen:
 
-- an image (placeholder until media is added),
+- an animated demonstration (16 exercises so far; a placeholder for the rest),
 - a one-line summary of what the exercise is for,
 - **How to do it** — numbered steps,
 - **How much** — reps, holds and frequency.
@@ -59,11 +59,30 @@ All content lives in [`src/data/exercises.json`](./src/data/exercises.json):
 }
 ```
 
-### Adding images
+### Exercise animations
 
-Set an exercise's `image` field to a URL or a path under `public/` (e.g.
-`"/images/chin-tucks.gif"`). Cards and the detail page switch from the
-placeholder to the image automatically — no code changes needed.
+Animated GIFs live in [`public/gifs/`](./public/gifs) as `<slug>.gif`. To add one,
+put the file there and set the exercise's `image` and `imageCredit`:
+
+```jsonc
+"image": "/gifs/calf-raises.gif",
+"imageCredit": {
+  "author": "Centers for Disease Control and Prevention",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Toe_stand-CDC_strength_training_for_older_adults.gif"
+}
+```
+
+Cards and the detail page switch from the placeholder to the animation
+automatically. Only use media you're licensed to use:
+
+| Source | Licence | Exercises | Credit shown |
+| --- | --- | --- | --- |
+| CDC *Strength training for older adults* (Wikimedia Commons) | Public domain | 13 | No |
+| Everkinetic (Wikimedia Commons), two frames combined | CC BY-SA 3.0 | 3 (glute bridge, ankle circles, cervical isometric) | Yes — required by the licence |
+
+A small "Animation: …" credit line appears under any animation whose licence
+isn't public domain.
 
 ## Project structure
 
@@ -78,11 +97,13 @@ src/
   components/
     Layout.tsx            # sticky header
     Cards.tsx             # CategoryCard, ExerciseCard
-    ImagePlaceholder.tsx  # shows a placeholder until image is set
+    ExerciseMedia.tsx     # animated GIF (+ licence credit) or placeholder
     icons.tsx             # inline SVG icons
   pages/
     HomePage.tsx          # hero + search + category grid
     CategoryPage.tsx      # exercises within a category
-    ExercisePage.tsx      # image, summary, steps, how much
+    ExercisePage.tsx      # animation, summary, steps, how much
+public/
+  gifs/                   # exercise animations, <slug>.gif
 firebase.json             # optional Firebase Hosting config (serves dist/)
 ```

@@ -126,7 +126,12 @@
       "howMuch": "10 circles each way or one alphabet, 3 times a day.",
       "category": "Ankle and Foot Exercises",
       "categorySlug": "ankle-and-foot-exercises",
-      "image": null
+      "image": "/gifs/ankle-circles.gif",
+      "imageCredit": {
+        "author": "Everkinetic (adapted)",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ankle_circles_1.svg"
+      }
     },
     {
       "slug": "ankle-pumps",
@@ -250,7 +255,12 @@
       "howMuch": "10 to 15 repetitions, 2 to 3 sets, 3 days a week.",
       "category": "Muscle Strengthening Exercises",
       "categorySlug": "muscle-strengthening-exercises",
-      "image": null
+      "image": "/gifs/bodyweight-squats.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Squat-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "calf-raises",
@@ -266,7 +276,12 @@
       "howMuch": "15 repetitions, 3 sets, once a day. For tendon rehab, we set specific loads.",
       "category": "Ankle and Foot Exercises",
       "categorySlug": "ankle-and-foot-exercises",
-      "image": null
+      "image": "/gifs/calf-raises.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Toe_stand-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "calf-stretch",
@@ -313,7 +328,12 @@
       "howMuch": "5 holds in each direction, once or twice a day. Increase hold time before increasing effort.",
       "category": "Neck Exercises",
       "categorySlug": "neck-exercises",
-      "image": null
+      "image": "/gifs/cervical-isometric-exercise.gif",
+      "imageCredit": {
+        "author": "Everkinetic (adapted)",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Front-and-back-neck-isometric-1.png"
+      }
     },
     {
       "slug": "cervical-rotation",
@@ -566,7 +586,12 @@
       "howMuch": "2 to 3 sets of 8 to 12 repetitions, 2 to 3 days a week.",
       "category": "Muscle Strengthening Exercises",
       "categorySlug": "muscle-strengthening-exercises",
-      "image": null
+      "image": "/gifs/dumbbell-exercises.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Biceps_curl-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "elbow-flexion-extension",
@@ -724,7 +749,12 @@
       "howMuch": "10 to 15 repetitions, 2 to 3 sets, once a day.",
       "category": "Back and Spine Exercises",
       "categorySlug": "back-and-spine-exercises",
-      "image": null
+      "image": "/gifs/glute-bridge.gif",
+      "imageCredit": {
+        "author": "Everkinetic (adapted)",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Bridging_1.svg"
+      }
     },
     {
       "slug": "grip-strengthening",
@@ -739,7 +769,12 @@
       "howMuch": "10 to 15 squeezes, 2 to 3 sets, once or twice a day.",
       "category": "Elbow, Wrist and Hand Exercises",
       "categorySlug": "elbow-wrist-and-hand-exercises",
-      "image": null
+      "image": "/gifs/grip-strengthening.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Grip_strength-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "hamstring-curls",
@@ -754,7 +789,12 @@
       "howMuch": "10 to 15 repetitions each leg, 2 to 3 sets, once a day.",
       "category": "Knee Exercises",
       "categorySlug": "knee-exercises",
-      "image": null
+      "image": "/gifs/hamstring-curls.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Knee_curl-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "hamstring-stretch",
@@ -769,7 +809,12 @@
       "howMuch": "3 holds of 30 seconds each leg, once or twice a day.",
       "category": "Knee Exercises",
       "categorySlug": "knee-exercises",
-      "image": null
+      "image": "/gifs/hamstring-stretch.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Hamstring_stretch-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "head-control-exercises",
@@ -831,7 +876,12 @@
       "howMuch": "10 to 15 repetitions each side, 2 to 3 sets, once a day.",
       "category": "Hip Exercises",
       "categorySlug": "hip-exercises",
-      "image": null
+      "image": "/gifs/hip-abduction.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Hip_abduction-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "hip-adduction",
@@ -1050,7 +1100,12 @@
       "howMuch": "10 to 15 repetitions each leg, 2 to 3 sets, once a day.",
       "category": "Knee Exercises",
       "categorySlug": "knee-exercises",
-      "image": null
+      "image": "/gifs/long-arc-quads.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Knee_extension-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "lumbar-rotation-stretch",
@@ -1082,7 +1137,12 @@
       "howMuch": "8 to 12 repetitions each leg, 2 to 3 sets, 2 to 3 days a week.",
       "category": "Muscle Strengthening Exercises",
       "categorySlug": "muscle-strengthening-exercises",
-      "image": null
+      "image": "/gifs/lunges.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Lunge-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "mckenzie-extension",
@@ -1303,7 +1363,12 @@
       "howMuch": "10 to 15 repetitions, 2 times a day. It can also be done sitting or standing against a wall.",
       "category": "Back and Spine Exercises",
       "categorySlug": "back-and-spine-exercises",
-      "image": null
+      "image": "/gifs/pelvic-tilts.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Pelvic_tilt-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "pendulum-exercise",
@@ -1508,7 +1573,12 @@
       "howMuch": "3 holds each leg, once or twice a day.",
       "category": "Stretching Exercises",
       "categorySlug": "stretching-exercises",
-      "image": null
+      "image": "/gifs/quadriceps-stretch.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Quad_stretch-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "resistance-band-ankle-exercises",
@@ -2012,7 +2082,12 @@
       "howMuch": "10 repetitions each leg, 2 to 3 sets, once a day. Start with a low step (10 to 15 centimetres).",
       "category": "Hip Exercises",
       "categorySlug": "hip-exercises",
-      "image": null
+      "image": "/gifs/step-ups.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Step_up-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "straight-leg-raise",
@@ -2247,7 +2322,12 @@
       "howMuch": "10 to 15 repetitions, 2 to 3 sets, 3 days a week.",
       "category": "Muscle Strengthening Exercises",
       "categorySlug": "muscle-strengthening-exercises",
-      "image": null
+      "image": "/gifs/wall-push-ups.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Wallpushup-CDC_strength_training_for_older_adults.gif"
+      }
     },
     {
       "slug": "wall-slides",

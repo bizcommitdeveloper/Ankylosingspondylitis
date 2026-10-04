@@ -1,5 +1,13 @@
 import raw from "./exercises.json";
 
+/** Provenance of an exercise animation (kept for every file, shown when required). */
+export interface MediaCredit {
+  author: string;
+  license: string;
+  /** Page the file came from (e.g. its Wikimedia Commons file page). */
+  source: string;
+}
+
 export interface Exercise {
   slug: string;
   title: string;
@@ -8,7 +16,9 @@ export interface Exercise {
   howMuch?: string;
   category: string;
   categorySlug: string;
+  /** Path to the animated demonstration under public/ (e.g. "/gifs/<slug>.gif"), or null. */
   image: string | null;
+  imageCredit?: MediaCredit;
 }
 
 export interface Category {

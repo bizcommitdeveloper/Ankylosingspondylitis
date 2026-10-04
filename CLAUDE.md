@@ -6,7 +6,8 @@ Guidance for AI assistants working in this repository.
 
 **Physiosolution Exercises** — a responsive React website presenting 148
 physiotherapy exercises (16 categories). Mobile/tablet-first. Exercise content
-is the owner's (Physiosolution); exercise media is being added.
+is the owner's (Physiosolution). 16 exercises have animated GIF demonstrations;
+the rest show a "Demonstration coming soon" placeholder.
 
 ## Stack
 
@@ -31,19 +32,38 @@ All content lives in `src/data/exercises.json`, loaded and typed via
 data — adding/editing an exercise is a data change, not a code change.
 
 - Each exercise has: `slug`, `title`, `summary` (one sentence: what it's for),
-  `steps[]`, `howMuch`, `category`, `categorySlug`, `image` (null until supplied).
-- **Images:** set `image` to a URL or a `public/`-relative path; cards and the
-  detail page swap from placeholder to the image automatically
-  (`components/ImagePlaceholder.tsx`).
+  `steps[]`, `howMuch`, `category`, `categorySlug`, `image` (null until supplied),
+  and `imageCredit` (`{ author, license, source }`) when `image` is set.
+- **Media:** animated GIFs live in `public/gifs/<slug>.gif` and `image` is
+  `"/gifs/<slug>.gif"`. `components/ExerciseMedia.tsx` renders the GIF (or the
+  placeholder when `image` is null) on cards and the detail page.
+
+## Exercise media rules
+
+- **Licensed/royalty-free only** (owner's decision). Never use GIFs from random
+  websites, GIPHY/Tenor search results or stock sites without a licence.
+- Current sources (all via Wikimedia Commons):
+  - CDC "Strength training for older adults" GIFs — **public domain**, no credit
+    shown.
+  - Everkinetic drawings — **CC BY-SA 3.0**; two frames combined into a GIF, so
+    the author is `"Everkinetic (adapted)"`. A small credit line is shown under
+    the animation because the licence requires it.
+- The credit line renders automatically for any `imageCredit` whose `license`
+  is not `"Public domain"` — always fill `imageCredit` accurately.
+- **Only map an animation to an exercise after checking it matches that
+  exercise's steps.** A wrong demonstration is worse than a placeholder (e.g.
+  the two-leg bridge GIF is not used for Single Leg Bridge).
 
 ## Product decisions (keep these unless the owner asks otherwise)
 
-- **Exercise page is deliberately minimal** so it fits one phone screen: image,
-  title, summary, *How to do it* (steps), *How much*. The owner removed "What it
-  does", "Common mistakes", the stop-and-check warnings and FAQs — don't add
-  them back, and keep summaries free of references to removed sections.
+- **Exercise page is deliberately minimal** so it fits one phone screen:
+  animation, title, summary, *How to do it* (steps), *How much*. The owner
+  removed "What it does", "Common mistakes", the stop-and-check warnings and
+  FAQs — don't add them back, and keep summaries free of references to removed
+  sections.
 - **No footer.** The medical disclaimer, copyright and source attribution were
-  removed at the owner's request.
+  removed at the owner's request. (The per-animation CC BY-SA credit is the one
+  exception — it's a licence requirement, not site attribution.)
 
 ## Conventions
 

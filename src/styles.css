@@ -268,27 +268,54 @@ main.container {
   flex: none;
 }
 
-/* Image placeholder */
-.img-ph {
-  background: var(--surface-alt);
-  border: 1px dashed var(--border);
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  color: var(--faint);
-  text-align: center;
-  gap: 6px;
-  aspect-ratio: 16 / 9;
+/* Exercise media (animated GIF demonstrations) */
+.media-figure {
+  margin: 0;
 }
-.img-ph.thumb {
+.media {
+  /* White panel: the line-art animations are drawn on white. */
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  height: 220px;
+  /* Flex (not grid) so the image's percentage max-height resolves against the
+     panel's fixed height and the whole figure scales down to fit. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px;
+}
+.media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.media.thumb {
   width: 64px;
   height: 64px;
-  aspect-ratio: auto;
-  border-radius: 12px;
   flex: none;
+  padding: 4px;
 }
-.img-ph .label {
+.media.empty-media {
+  background: var(--surface-alt);
+  border-style: dashed;
+  color: var(--faint);
+  text-align: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.media .label {
   font-size: 12px;
+}
+.media-credit {
+  font-size: 11px;
+  color: var(--faint);
+  margin-top: 4px;
+  text-align: right;
+}
+.media-credit a {
+  text-decoration: underline;
 }
 
 /* Chips */

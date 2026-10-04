@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Category, Exercise } from "../data";
-import { ImagePlaceholder } from "./ImagePlaceholder";
+import { ExerciseMedia } from "./ExerciseMedia";
 import { Chevron, Dumbbell } from "./icons";
 
 export function CategoryCard({ category }: { category: Category }) {
@@ -24,7 +24,7 @@ export function CategoryCard({ category }: { category: Category }) {
 export function ExerciseCard({ exercise }: { exercise: Exercise }) {
   return (
     <Link className="card ex-card" to={`/exercise/${exercise.slug}`}>
-      <ImagePlaceholder src={exercise.image} alt={exercise.title} thumb />
+      <ExerciseMedia src={exercise.image} alt={exercise.title} thumb />
       <span className="ex-info">
         <span className="ex-title">{exercise.title}</span>
         <span className="ex-sub">{exercise.summary}</span>
