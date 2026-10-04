@@ -53,6 +53,10 @@ data — adding/editing an exercise is a data change, not a code change.
 - **Only map an animation to an exercise after checking it matches that
   exercise's steps.** A wrong demonstration is worse than a placeholder (e.g.
   the two-leg bridge GIF is not used for Single Leg Bridge).
+- Finding more media: `scripts/commons/` builds a list of Commons files and
+  matches them to every exercise → `docs/commons-candidates.md`. Record each
+  visual check in `scripts/commons/data/verdicts.json`. Status and next steps
+  are in `HANDOFF.md` — read it first when picking up the media work.
 
 ## Product decisions (keep these unless the owner asks otherwise)
 

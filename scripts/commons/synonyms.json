@@ -1,0 +1,492 @@
+{
+  "acl-rehabilitation-exercises": [
+    "ACL rehabilitation"
+  ],
+  "adductor-stretch": [
+    "adductor stretch",
+    "groin stretch",
+    "butterfly stretch"
+  ],
+  "ankle-pumps": [
+    "ankle pump",
+    "ankle dorsiflexion plantarflexion"
+  ],
+  "back-extension-exercise": [
+    "back extension exercise",
+    "superman exercise",
+    "prone back extension",
+    "superman",
+    "supermans"
+  ],
+  "backward-walking": [
+    "backward walking",
+    "walking backwards"
+  ],
+  "balance-board-exercises": [
+    "balance board",
+    "wobble board"
+  ],
+  "balance-training": [
+    "balance exercise",
+    "balance training"
+  ],
+  "biceps-stretch": [
+    "biceps stretch"
+  ],
+  "bird-dog": [
+    "bird dog exercise",
+    "quadruped arm leg raise",
+    "quadraplex",
+    "birddog"
+  ],
+  "calf-stretch": [
+    "calf stretch",
+    "gastrocnemius stretch",
+    "wall calf stretch"
+  ],
+  "cat-cow-stretch": [
+    "cat cow",
+    "Marjaryasana",
+    "Bitilasana"
+  ],
+  "cervical-rotation": [
+    "neck rotation exercise"
+  ],
+  "cervical-side-bending": [
+    "neck side bend stretch",
+    "lateral neck stretch",
+    "neck side flexion"
+  ],
+  "chair-exercises": [
+    "chair exercise",
+    "seated exercise elderly"
+  ],
+  "chest-mobility-exercises": [
+    "chest expansion exercise"
+  ],
+  "chest-stretch": [
+    "chest stretch",
+    "pectoral stretch",
+    "doorway stretch",
+    "pec stretch"
+  ],
+  "child-s-pose": [
+    "child's pose",
+    "Balasana",
+    "balasana"
+  ],
+  "chin-tucks": [
+    "chin tuck exercise",
+    "cervical retraction"
+  ],
+  "clamshell-exercise": [
+    "clamshell exercise",
+    "clam exercise"
+  ],
+  "coordination-exercises": [
+    "coordination exercise"
+  ],
+  "core-bracing": [
+    "abdominal bracing",
+    "abdominal hollowing",
+    "drawing in"
+  ],
+  "core-strengthening": [
+    "plank exercise",
+    "abdominal crunch",
+    "side bridge",
+    "front plank",
+    "side plank"
+  ],
+  "crawling-exercises": [
+    "baby crawling",
+    "crawling infant"
+  ],
+  "dead-bug": [
+    "dead bug exercise"
+  ],
+  "deep-breathing-and-thoracic-expansion": [
+    "deep breathing",
+    "thoracic expansion"
+  ],
+  "diaphragmatic-breathing": [
+    "diaphragmatic breathing",
+    "belly breathing",
+    "diaphragm breathing animation"
+  ],
+  "elbow-flexion-and-extension": [
+    "elbow flexion extension"
+  ],
+  "elbow-isometric-exercises": [
+    "elbow isometric"
+  ],
+  "fall-prevention-exercises": [
+    "fall prevention exercise"
+  ],
+  "fine-motor-exercises": [
+    "fine motor skills",
+    "pegboard"
+  ],
+  "finger-flexion-and-extension": [
+    "finger flexion",
+    "finger exercise"
+  ],
+  "functional-movement-training": [
+    "functional movement"
+  ],
+  "functional-reach-exercises": [
+    "functional reach test"
+  ],
+  "functional-strengthening": [
+    "functional training"
+  ],
+  "gait-training": [
+    "gait training",
+    "parallel bars walking"
+  ],
+  "glute-bridge": [
+    "bridge exercise",
+    "bridging"
+  ],
+  "hamstring-stretch": [
+    "hamstring stretch"
+  ],
+  "head-control-exercises": [
+    "infant head control"
+  ],
+  "heel-slides": [
+    "heel slide exercise"
+  ],
+  "heel-walking": [
+    "heel walk"
+  ],
+  "hip-adduction": [
+    "hip adduction",
+    "side lying adduction",
+    "adduction"
+  ],
+  "hip-extension": [
+    "hip extension exercise",
+    "standing hip extension",
+    "donkey kick"
+  ],
+  "hip-flexion": [
+    "hip flexion exercise",
+    "standing knee raise",
+    "marching"
+  ],
+  "hip-flexor-stretch": [
+    "hip flexor stretch",
+    "kneeling lunge stretch",
+    "Anjaneyasana"
+  ],
+  "hip-rotation-exercises": [
+    "hip rotation",
+    "hip internal rotation"
+  ],
+  "incentive-spirometry": [
+    "incentive spirometer"
+  ],
+  "isometric-exercises": [
+    "isometric exercise",
+    "plank"
+  ],
+  "it-band-stretch": [
+    "iliotibial band stretch",
+    "IT band stretch"
+  ],
+  "kegel-exercises": [
+    "Kegel exercise",
+    "pelvic floor exercise",
+    "pelvic floor muscles",
+    "kegel excercise"
+  ],
+  "knee-extension-stretch": [
+    "knee extension stretch",
+    "prone hang"
+  ],
+  "knee-to-chest-stretch": [
+    "knee to chest",
+    "Apanasana"
+  ],
+  "levator-scapulae-stretch": [
+    "levator scapulae stretch"
+  ],
+  "lumbar-rotation-stretch": [
+    "lumbar rotation stretch",
+    "supine twist",
+    "lying spinal twist"
+  ],
+  "mckenzie-extension": [
+    "McKenzie",
+    "prone press up",
+    "cobra pose",
+    "Bhujangasana"
+  ],
+  "median-nerve-glides": [
+    "median nerve glide",
+    "nerve gliding"
+  ],
+  "mini-squats": [
+    "mini squat",
+    "partial squat"
+  ],
+  "motor-control-exercises": [
+    "motor control"
+  ],
+  "neck-extension-exercise": [
+    "neck extension"
+  ],
+  "neck-flexion-stretch": [
+    "neck flexion stretch",
+    "neck stretch",
+    "neck flexion"
+  ],
+  "neurodevelopmental-exercises": [
+    "Bobath",
+    "neurodevelopmental treatment"
+  ],
+  "parkinson-s-exercise-program": [
+    "Parkinson exercise"
+  ],
+  "passive-assisted-and-active-range-of-motion": [
+    "range of motion exercise",
+    "passive range of motion"
+  ],
+  "pelvic-mobility-exercises": [
+    "pelvic mobility",
+    "pelvic circles"
+  ],
+  "pendulum-exercise": [
+    "Codman pendulum exercise",
+    "pendulum shoulder exercise"
+  ],
+  "piriformis-stretch": [
+    "piriformis stretch",
+    "figure four stretch"
+  ],
+  "plantar-fascia-stretch": [
+    "plantar fascia stretch",
+    "plantar fasciitis stretch"
+  ],
+  "post-stroke-exercises": [
+    "stroke rehabilitation"
+  ],
+  "postnatal-core-exercises": [
+    "postnatal exercise",
+    "postpartum exercise"
+  ],
+  "prenatal-mobility-exercises": [
+    "prenatal exercise",
+    "pregnancy exercise"
+  ],
+  "pursed-lip-breathing": [
+    "pursed lip breathing"
+  ],
+  "quadriceps-sets": [
+    "quad set",
+    "quadriceps setting"
+  ],
+  "resistance-band-ankle-exercises": [
+    "ankle resistance band",
+    "theraband ankle"
+  ],
+  "resistance-band-exercises": [
+    "resistance band exercise",
+    "theraband exercise"
+  ],
+  "respiratory-muscle-training": [
+    "inspiratory muscle trainer"
+  ],
+  "rolling-exercises": [
+    "baby rolling over"
+  ],
+  "rotator-cuff-strengthening": [
+    "rotator cuff exercise",
+    "external rotation band"
+  ],
+  "scapular-retraction": [
+    "scapular retraction",
+    "shoulder blade squeeze"
+  ],
+  "serratus-anterior-exercises": [
+    "serratus punch",
+    "scapular push up"
+  ],
+  "short-arc-quads": [
+    "short arc quad"
+  ],
+  "short-foot-exercise": [
+    "short foot exercise",
+    "foot doming"
+  ],
+  "shoulder-abduction": [
+    "lateral raise",
+    "side arm raise",
+    "lateral raises"
+  ],
+  "shoulder-circles": [
+    "shoulder roll exercise",
+    "arm circles"
+  ],
+  "shoulder-extension": [
+    "shoulder extension exercise"
+  ],
+  "shoulder-external-rotation": [
+    "shoulder external rotation exercise",
+    "external rotation"
+  ],
+  "shoulder-flexion": [
+    "front raise",
+    "front arm raise",
+    "front raises"
+  ],
+  "shoulder-internal-rotation": [
+    "shoulder internal rotation exercise",
+    "internal rotation",
+    "arm up your back"
+  ],
+  "shoulder-stretch": [
+    "cross body shoulder stretch",
+    "shoulder stretch",
+    "shoulder blade stretch"
+  ],
+  "sideways-walking": [
+    "side stepping",
+    "lateral walk"
+  ],
+  "single-leg-balance": [
+    "single leg stance",
+    "one leg stand",
+    "standing on one leg",
+    "standing onefoot",
+    "tree pose",
+    "vrksasana"
+  ],
+  "single-leg-bridge": [
+    "single leg bridge",
+    "single leg glute bridge"
+  ],
+  "sit-to-stand": [
+    "sit to stand",
+    "chair stand",
+    "chair rise exercise"
+  ],
+  "sitting-balance-exercises": [
+    "sitting balance"
+  ],
+  "spinal-cord-injury-exercises": [
+    "spinal cord injury rehabilitation"
+  ],
+  "stair-training": [
+    "stair climbing",
+    "stair exercise"
+  ],
+  "standing-and-walking-training": [
+    "toddler first steps",
+    "baby walker walking"
+  ],
+  "step-downs": [
+    "step down exercise",
+    "lateral step down"
+  ],
+  "step-training": [
+    "step exercise",
+    "step aerobics"
+  ],
+  "straight-leg-raise": [
+    "straight leg raise",
+    "leg raise",
+    "leg lift"
+  ],
+  "supported-squats": [
+    "chair squat",
+    "supported squat"
+  ],
+  "tandem-walking": [
+    "tandem walking",
+    "tandem gait",
+    "heel to toe walk"
+  ],
+  "tendon-gliding-exercises": [
+    "tendon gliding",
+    "hand tendon glide"
+  ],
+  "terminal-knee-extension": [
+    "terminal knee extension"
+  ],
+  "thoracic-extension": [
+    "thoracic extension",
+    "foam roller thoracic"
+  ],
+  "toe-curls": [
+    "toe curl",
+    "towel scrunch"
+  ],
+  "toe-raises": [
+    "toe raise",
+    "tibialis raise",
+    "toe raises"
+  ],
+  "toe-walking": [
+    "tiptoe walking",
+    "toe walking"
+  ],
+  "transfer-training": [
+    "patient transfer",
+    "bed to chair transfer"
+  ],
+  "triceps-stretch": [
+    "triceps stretch",
+    "overhead triceps stretch"
+  ],
+  "tummy-time": [
+    "tummy time",
+    "prone infant"
+  ],
+  "upper-trapezius-stretch": [
+    "trapezius stretch"
+  ],
+  "walking-exercises": [
+    "walking exercise",
+    "Nordic walking"
+  ],
+  "wall-slides": [
+    "wall slide exercise",
+    "wall angel"
+  ],
+  "wall-squats": [
+    "wall squat",
+    "wall sit"
+  ],
+  "wall-walks": [
+    "finger wall walk",
+    "wall crawl shoulder",
+    "fingers up the wall"
+  ],
+  "weight-bearing-exercises": [
+    "weight bearing exercise"
+  ],
+  "weight-shifting": [
+    "weight shift"
+  ],
+  "wrist-circles": [
+    "wrist circles",
+    "wrist rotation exercise"
+  ],
+  "wrist-extensor-stretch": [
+    "wrist extensor stretch",
+    "forearm stretch"
+  ],
+  "wrist-flexion-and-extension": [
+    "wrist curl",
+    "wrist flexion extension"
+  ],
+  "wrist-flexor-stretch": [
+    "wrist flexor stretch"
+  ],
+  "wrist-pronation-and-supination": [
+    "pronation supination",
+    "forearm rotation exercise"
+  ]
+}

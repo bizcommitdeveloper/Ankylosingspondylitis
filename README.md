@@ -105,5 +105,9 @@ src/
     ExercisePage.tsx      # animation, summary, steps, how much
 public/
   gifs/                   # exercise animations, <slug>.gif
+scripts/commons/          # Wikimedia Commons media search + matching (not shipped)
+docs/
+  commons-candidates.md   # every exercise vs. matching Commons media (generated)
+HANDOFF.md                # current status and next steps
 firebase.json             # optional Firebase Hosting config (serves dist/)
 ```
