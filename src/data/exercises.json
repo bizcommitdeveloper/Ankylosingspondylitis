@@ -1,0 +1,2488 @@
+{
+  "categories": [
+    {
+      "name": "Neck Exercises",
+      "slug": "neck-exercises",
+      "count": 9
+    },
+    {
+      "name": "Shoulder Exercises",
+      "slug": "shoulder-exercises",
+      "count": 14
+    },
+    {
+      "name": "Back and Spine Exercises",
+      "slug": "back-and-spine-exercises",
+      "count": 12
+    },
+    {
+      "name": "Hip Exercises",
+      "slug": "hip-exercises",
+      "count": 10
+    },
+    {
+      "name": "Knee Exercises",
+      "slug": "knee-exercises",
+      "count": 13
+    },
+    {
+      "name": "Ankle and Foot Exercises",
+      "slug": "ankle-and-foot-exercises",
+      "count": 11
+    },
+    {
+      "name": "Elbow, Wrist and Hand Exercises",
+      "slug": "elbow-wrist-and-hand-exercises",
+      "count": 11
+    },
+    {
+      "name": "Muscle Strengthening Exercises",
+      "slug": "muscle-strengthening-exercises",
+      "count": 8
+    },
+    {
+      "name": "Stretching Exercises",
+      "slug": "stretching-exercises",
+      "count": 8
+    },
+    {
+      "name": "Balance and Mobility Exercises",
+      "slug": "balance-and-mobility-exercises",
+      "count": 9
+    },
+    {
+      "name": "Neurological Rehabilitation Exercises",
+      "slug": "neurological-rehabilitation-exercises",
+      "count": 9
+    },
+    {
+      "name": "Breathing and Respiratory Exercises",
+      "slug": "breathing-and-respiratory-exercises",
+      "count": 6
+    },
+    {
+      "name": "Senior Citizen Exercises",
+      "slug": "senior-citizen-exercises",
+      "count": 4
+    },
+    {
+      "name": "Pediatric Exercises",
+      "slug": "pediatric-exercises",
+      "count": 8
+    },
+    {
+      "name": "Women's Health Exercises",
+      "slug": "women-s-health-exercises",
+      "count": 4
+    },
+    {
+      "name": "Rehabilitation Exercises",
+      "slug": "rehabilitation-exercises",
+      "count": 12
+    }
+  ],
+  "exercises": [
+    {
+      "slug": "acl-rehabilitation-exercises",
+      "title": "ACL Rehabilitation Exercises",
+      "summary": "ACL rehabilitation exercises after injury or reconstruction.",
+      "steps": [
+        "Phase 1: reduce swelling, regain full straightening, quad activation.",
+        "Phase 2: full bend, normal walking, basic strengthening.",
+        "Phase 3: progressive strength, balance, single-leg control.",
+        "Phase 4: running, jumping and landing training.",
+        "Phase 5: sport-specific drills and return-to-sport testing."
+      ],
+      "howMuch": "Daily exercise with regular supervised sessions.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "adductor-stretch",
+      "title": "Adductor Stretch",
+      "summary": "Adductor stretch for groin tightness and hip mobility.",
+      "steps": [
+        "Butterfly: sit with the soles of your feet together and knees falling outwards.",
+        "Hold your feet and sit tall, gently lowering knees towards the floor.",
+        "Hold 30 seconds.",
+        "Side lunge: stand with feet wide apart, bend one knee and shift sideways until you feel a stretch in the straight leg's inner thigh."
+      ],
+      "howMuch": "3 holds, once a day.",
+      "category": "Stretching Exercises",
+      "categorySlug": "stretching-exercises",
+      "image": null
+    },
+    {
+      "slug": "ankle-circles",
+      "title": "Ankle Circles",
+      "summary": "Ankle circles and ankle alphabet exercises for sprains and stiffness.",
+      "steps": [
+        "Sit or lie with the leg supported and the foot free to move.",
+        "Circles: slowly rotate the foot in large circles, 10 clockwise and 10 anticlockwise.",
+        "Alphabet: trace the letters A to Z in the air with your big toe.",
+        "Keep the movement at the ankle, not the knee."
+      ],
+      "howMuch": "10 circles each way or one alphabet, 3 times a day.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": "/gifs/ankle-circles.gif",
+      "imageCredit": {
+        "author": "Everkinetic (adapted)",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ankle_circles_1.svg"
+      }
+    },
+    {
+      "slug": "ankle-pumps",
+      "title": "Ankle Pumps",
+      "summary": "Ankle pumps for circulation, swelling and DVT risk after surgery.",
+      "steps": [
+        "Lie or sit with your legs supported.",
+        "Pull your toes and foot up towards you as far as comfortable.",
+        "Then point your foot away.",
+        "Move smoothly and rhythmically."
+      ],
+      "howMuch": "10 to 20 pumps every hour while awake after surgery, or during long periods of sitting.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": null
+    },
+    {
+      "slug": "back-extension-exercise",
+      "title": "Back Extension Exercise",
+      "summary": "Back extension exercise for spine strength, posture and osteoporosis.",
+      "steps": [
+        "Lie face down with a pillow under your hips and arms by your sides.",
+        "Tuck your chin slightly and squeeze your shoulder blades together.",
+        "Lift your chest a few centimetres off the floor.",
+        "Hold 3 to 5 seconds, then lower slowly.",
+        "Progress by placing your hands lightly by your temples."
+      ],
+      "howMuch": "8 to 10 repetitions, 2 sets, once a day.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "backward-walking",
+      "title": "Backward Walking",
+      "summary": "Backward walking exercise for balance and knee rehab.",
+      "steps": [
+        "Stand beside a counter with one hand on it.",
+        "Take small steps backwards, landing on the ball of the foot then heel.",
+        "Keep an upright posture.",
+        "Walk 5 metres, then turn and repeat."
+      ],
+      "howMuch": "3 to 4 lengths, once a day.",
+      "category": "Balance and Mobility Exercises",
+      "categorySlug": "balance-and-mobility-exercises",
+      "image": null
+    },
+    {
+      "slug": "balance-board-exercises",
+      "title": "Balance Board Exercises",
+      "summary": "Balance board and wobble board exercises for ankle sprains and sports rehab.",
+      "steps": [
+        "Place the board next to a wall or counter.",
+        "Stand on it with both feet and try to keep the edges off the floor.",
+        "Rock slowly forwards and back, then side to side, with control.",
+        "Progress to single-leg stance, then add ball catches."
+      ],
+      "howMuch": "3 rounds of 30 to 60 seconds, once a day.",
+      "category": "Balance and Mobility Exercises",
+      "categorySlug": "balance-and-mobility-exercises",
+      "image": null
+    },
+    {
+      "slug": "balance-training",
+      "title": "Balance Training",
+      "summary": "Balance training programme for falls prevention and neurological conditions.",
+      "steps": [
+        "Static balance: feet together, tandem stance, single leg stand.",
+        "Dynamic balance: weight shifting, reaching, turning.",
+        "Walking challenges: heel-to-toe, sideways, backwards, head turns.",
+        "Add difficulty: eyes closed, soft surfaces, dual tasks like counting.",
+        "Always have support within reach."
+      ],
+      "howMuch": "At least 2 to 3 hours per week in total, spread over several sessions, as recommended for falls prevention.",
+      "category": "Neurological Rehabilitation Exercises",
+      "categorySlug": "neurological-rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "biceps-stretch",
+      "title": "Biceps Stretch",
+      "summary": "Biceps stretch for arm and shoulder flexibility.",
+      "steps": [
+        "Stand side-on to a wall and place your palm flat on it behind you at shoulder height, thumb up.",
+        "Keeping the elbow straight, slowly turn your body away from the wall.",
+        "Feel a stretch in the front of the arm and shoulder.",
+        "Hold 30 seconds, switch sides."
+      ],
+      "howMuch": "2 to 3 holds, once a day.",
+      "category": "Stretching Exercises",
+      "categorySlug": "stretching-exercises",
+      "image": null
+    },
+    {
+      "slug": "bird-dog",
+      "title": "Bird Dog",
+      "summary": "Bird dog exercise for back pain and core stability.",
+      "steps": [
+        "Kneel on hands and knees with your back flat and neck long.",
+        "Gently brace your tummy.",
+        "Slide one leg straight back along the floor, then lift it to hip height.",
+        "Once steady, add the opposite arm reaching forward at shoulder height.",
+        "Hold 5 seconds without the trunk twisting, then return and swap sides."
+      ],
+      "howMuch": "6 to 10 repetitions each side, 2 sets, once a day. Increase hold time to 10 seconds.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "bodyweight-squats",
+      "title": "Bodyweight Squats",
+      "summary": "Bodyweight squat technique for leg strength.",
+      "steps": [
+        "Stand with feet shoulder width apart, toes slightly turned out.",
+        "Push the hips back and bend the knees, as if sitting on a chair.",
+        "Keep your chest up and weight through the heels.",
+        "Lower to a comfortable depth, ideally thighs parallel to the floor.",
+        "Push through the heels to stand, squeezing the glutes."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 to 3 sets, 3 days a week.",
+      "category": "Muscle Strengthening Exercises",
+      "categorySlug": "muscle-strengthening-exercises",
+      "image": "/gifs/bodyweight-squats.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Squat-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "calf-raises",
+      "title": "Calf Raises",
+      "summary": "Calf raises (heel raises) for Achilles, plantar fasciitis and balance.",
+      "steps": [
+        "Stand holding a counter with feet hip width apart.",
+        "Rise up onto the balls of your feet as high as you can.",
+        "Pause 1 second, then lower slowly over 3 seconds.",
+        "Progress to single-leg raises.",
+        "Advanced: do them on a step, lowering the heel below the step level."
+      ],
+      "howMuch": "15 repetitions, 3 sets, once a day. For tendon rehab, we set specific loads.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": "/gifs/calf-raises.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Toe_stand-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "calf-stretch",
+      "title": "Calf Stretch",
+      "summary": "Calf stretch for plantar fasciitis, Achilles pain and tight calves.",
+      "steps": [
+        "Stand facing a wall with hands on it.",
+        "Step one foot back, keeping the heel down and toes pointing forward.",
+        "Bend the front knee and lean towards the wall until you feel a stretch in the back calf.",
+        "Hold 30 seconds.",
+        "Then bend the back knee slightly, keeping the heel down, to stretch the lower calf. Hold 30 seconds."
+      ],
+      "howMuch": "2 to 3 holds of each version, each leg, twice a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "cat-cow-stretch",
+      "title": "Cat Cow Stretch",
+      "summary": "Cat cow (cat camel) stretch for back stiffness and pain.",
+      "steps": [
+        "Kneel on hands and knees, hands under shoulders and knees under hips.",
+        "Breathe out and round your back up towards the ceiling, tucking your chin and tailbone.",
+        "Breathe in and slowly let your back dip, lifting your chest and tailbone.",
+        "Move slowly within a comfortable range."
+      ],
+      "howMuch": "10 slow cycles, once or twice a day. Many people like it first thing in the morning.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "cervical-isometric-exercise",
+      "title": "Cervical Isometric Exercises",
+      "summary": "Cervical isometric exercises for neck strength.",
+      "steps": [
+        "Sit tall with a small chin tuck.",
+        "Forward: place your palm on your forehead and press your head gently into it, resisting with your hand so nothing moves.",
+        "Backward: clasp your hands behind your head and press back into them.",
+        "Sideways: place a hand on the side of your head and press your head into it. Repeat on the other side.",
+        "Hold each press for 5 to 10 seconds at about a third of your maximum effort."
+      ],
+      "howMuch": "5 holds in each direction, once or twice a day. Increase hold time before increasing effort.",
+      "category": "Neck Exercises",
+      "categorySlug": "neck-exercises",
+      "image": "/gifs/cervical-isometric-exercise.gif",
+      "imageCredit": {
+        "author": "Everkinetic (adapted)",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Front-and-back-neck-isometric-1.png"
+      }
+    },
+    {
+      "slug": "cervical-rotation",
+      "title": "Cervical Rotation",
+      "summary": "Cervical rotation exercise for neck stiffness.",
+      "steps": [
+        "Sit upright with your back supported and shoulders relaxed.",
+        "Do a small chin tuck first so the head is balanced over the shoulders.",
+        "Slowly turn your head to the right as far as is comfortable, keeping your chin level.",
+        "Pause for 2 to 3 seconds, return to the middle, then turn to the left.",
+        "If one side is tighter, you can add light overpressure with your hand once it moves freely without pain."
+      ],
+      "howMuch": "10 turns each way, 2 to 3 times a day. Move within a range that feels like a mild stretch, not pain.",
+      "category": "Neck Exercises",
+      "categorySlug": "neck-exercises",
+      "image": null
+    },
+    {
+      "slug": "cervical-side-bending",
+      "title": "Cervical Side Bending",
+      "summary": "Cervical side bending exercise for a stiff neck.",
+      "steps": [
+        "Sit tall with your shoulders level and relaxed.",
+        "Keep looking straight ahead and slowly tilt your right ear towards your right shoulder.",
+        "Stop when you feel a gentle stretch on the left side of the neck. Don't lift the shoulder to meet the ear.",
+        "Hold for 3 to 5 seconds, return to centre, then repeat to the left."
+      ],
+      "howMuch": "10 repetitions each side, twice a day.",
+      "category": "Neck Exercises",
+      "categorySlug": "neck-exercises",
+      "image": null
+    },
+    {
+      "slug": "chair-exercises",
+      "title": "Chair Exercises",
+      "summary": "Chair exercises for seniors: seated leg raises, seated marching and mobility.",
+      "steps": [
+        "Seated marching: sit tall at the front of a firm chair and lift alternate knees, as if marching, for 30 to 60 seconds.",
+        "Seated leg raises: straighten one knee and hold for 3 seconds, then lower. Alternate legs.",
+        "Ankle pumps and circles.",
+        "Arm raises: lift both arms forward and overhead, then lower.",
+        "Trunk turns: arms crossed, turn gently left and right."
+      ],
+      "howMuch": "10 repetitions of each, once or twice a day. A 10 to 15 minute routine is enough to start.",
+      "category": "Senior Citizen Exercises",
+      "categorySlug": "senior-citizen-exercises",
+      "image": null
+    },
+    {
+      "slug": "chest-mobility-exercises",
+      "title": "Chest Mobility Exercises",
+      "summary": "Chest mobility exercises for stiff chest wall and breathing.",
+      "steps": [
+        "Sit upright. Breathe in while lifting both arms overhead; breathe out as they lower.",
+        "Side bend: breathe in as you reach one arm over your head to the side, out as you return.",
+        "Rotation: arms crossed, breathe in and turn to one side, out as you return.",
+        "Move slowly with breathing."
+      ],
+      "howMuch": "10 repetitions of each, once or twice a day.",
+      "category": "Breathing and Respiratory Exercises",
+      "categorySlug": "breathing-and-respiratory-exercises",
+      "image": null
+    },
+    {
+      "slug": "chest-stretch",
+      "title": "Chest Stretch",
+      "summary": "Doorway chest stretch for rounded shoulders and posture.",
+      "steps": [
+        "Stand in a doorway with forearms on the frame, elbows at shoulder height.",
+        "Step one foot forward and lean gently through the doorway.",
+        "Feel the stretch across the front of the chest.",
+        "Hold 30 seconds.",
+        "Vary arm height slightly to stretch different parts."
+      ],
+      "howMuch": "3 holds, 1 to 2 times a day.",
+      "category": "Stretching Exercises",
+      "categorySlug": "stretching-exercises",
+      "image": null
+    },
+    {
+      "slug": "childs-pose",
+      "title": "Child's Pose",
+      "summary": "Child's pose stretch for lower back tension.",
+      "steps": [
+        "Kneel on the floor with knees hip width apart and big toes touching.",
+        "Sit back towards your heels.",
+        "Reach your arms forward along the floor and lower your chest towards your thighs.",
+        "Rest your forehead on the floor or a cushion.",
+        "Breathe slowly into your back for 30 to 60 seconds."
+      ],
+      "howMuch": "2 to 3 holds, once a day or after exercise.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "chin-tucks",
+      "title": "Chin Tucks",
+      "summary": "Chin tucks for neck pain and forward head posture.",
+      "steps": [
+        "Sit or stand tall with your shoulders relaxed and eyes looking straight ahead.",
+        "Slide your chin straight back, as if making a double chin. Keep your eyes level; don't nod down.",
+        "You should feel a gentle stretch at the base of the skull and light effort at the front of the neck.",
+        "Hold for 5 seconds, then relax without letting the head poke forward.",
+        "Progress by doing it lying on your back, pressing the back of the head gently into the pillow."
+      ],
+      "howMuch": "10 repetitions with a 5 second hold, 2 to 3 times a day. Short, frequent sets during work breaks work better than one long session.",
+      "category": "Neck Exercises",
+      "categorySlug": "neck-exercises",
+      "image": null
+    },
+    {
+      "slug": "clamshell-exercise",
+      "title": "Clamshell Exercise",
+      "summary": "Clamshell exercise for hip strength and knee pain.",
+      "steps": [
+        "Lie on your side with hips and knees bent to about 45 degrees and feet together.",
+        "Keep your top hip stacked directly over the bottom hip.",
+        "Keeping the feet touching, lift the top knee as far as you can without the pelvis rolling back.",
+        "Hold 2 seconds, then lower slowly.",
+        "Add a resistance band just above the knees to progress."
+      ],
+      "howMuch": "12 to 15 repetitions each side, 2 to 3 sets, once a day.",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": null
+    },
+    {
+      "slug": "coordination-exercises",
+      "title": "Coordination Exercises",
+      "summary": "Coordination exercises for adults and children.",
+      "steps": [
+        "Finger to nose: touch your nose, then a target held in front, alternating.",
+        "Heel to shin: lying down, slide one heel along the opposite shin.",
+        "Alternating taps: tap hands or feet alternately, speeding up gradually.",
+        "Ball skills: rolling, throwing and catching, bouncing.",
+        "For children: obstacle courses, hopscotch and clapping games."
+      ],
+      "howMuch": "10 to 15 minutes a day, varied to keep it interesting.",
+      "category": "Neurological Rehabilitation Exercises",
+      "categorySlug": "neurological-rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "core-bracing",
+      "title": "Core Bracing",
+      "summary": "Core and abdominal bracing technique for back pain.",
+      "steps": [
+        "Lie on your back with knees bent, or stand tall.",
+        "Place your fingers just inside your hip bones.",
+        "Tighten your tummy muscles lightly all around, as if about to be poked in the stomach. You should feel firmness under the fingers.",
+        "Keep breathing normally throughout. Don't suck the tummy in.",
+        "Hold 10 seconds, then relax. Practise the brace during daily tasks such as lifting shopping."
+      ],
+      "howMuch": "10 holds of 10 seconds, twice a day, then apply it during other exercises.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "core-strengthening",
+      "title": "Core Strengthening",
+      "summary": "Core strengthening exercises for back pain and sport.",
+      "steps": [
+        "Start with core bracing and dead bugs.",
+        "Front plank: forearms and toes (or knees) on the floor, body straight, hold 10 to 30 seconds.",
+        "Side plank: on one forearm and the side of the knees or feet, hold 10 to 30 seconds.",
+        "Combine with bird dogs and glute bridges.",
+        "Progress hold times before difficulty."
+      ],
+      "howMuch": "3 to 5 exercises, 2 to 3 sets, 3 to 4 days a week.",
+      "category": "Muscle Strengthening Exercises",
+      "categorySlug": "muscle-strengthening-exercises",
+      "image": null
+    },
+    {
+      "slug": "crawling-exercises",
+      "title": "Crawling Exercises",
+      "summary": "Crawling exercises for babies and children.",
+      "steps": [
+        "Hands and knees rocking: support the baby in four-point position and rock gently.",
+        "Place toys just ahead to encourage reaching and moving.",
+        "Crawl over cushions and through tunnels for older children.",
+        "Animal walks: bear crawls and crab walks for school-age children."
+      ],
+      "howMuch": "Daily play sessions.",
+      "category": "Pediatric Exercises",
+      "categorySlug": "pediatric-exercises",
+      "image": null
+    },
+    {
+      "slug": "dead-bug",
+      "title": "Dead Bug",
+      "summary": "Dead bug exercise for core strength and back pain.",
+      "steps": [
+        "Lie on your back, knees bent at 90 degrees over your hips and arms pointing at the ceiling.",
+        "Gently press your lower back towards the floor and breathe out.",
+        "Slowly lower one heel to tap the floor, keeping the knee bent. Return.",
+        "Progress to lowering the opposite arm overhead at the same time.",
+        "Harder: straighten the leg as it lowers."
+      ],
+      "howMuch": "6 to 10 slow repetitions each side, 2 to 3 sets.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "deep-breathing-exercises",
+      "title": "Deep Breathing and Thoracic Expansion",
+      "summary": "Deep breathing and thoracic expansion exercises after surgery and for chest conditions.",
+      "steps": [
+        "Sit upright or lie propped up.",
+        "Place hands on your lower ribs.",
+        "Breathe in slowly and deeply, feeling the ribs expand into your hands.",
+        "Hold for 3 seconds.",
+        "Breathe out gently. Do 3 to 4 breaths, then rest with normal breathing."
+      ],
+      "howMuch": "3 to 4 deep breaths, repeated every hour while awake after surgery.",
+      "category": "Breathing and Respiratory Exercises",
+      "categorySlug": "breathing-and-respiratory-exercises",
+      "image": null
+    },
+    {
+      "slug": "diaphragmatic-breathing",
+      "title": "Diaphragmatic Breathing",
+      "summary": "Diaphragmatic (belly) breathing for asthma, anxiety, postnatal recovery and pelvic health.",
+      "steps": [
+        "Lie on your back with knees bent, or sit supported.",
+        "Place one hand on your chest and one on your belly.",
+        "Breathe in gently through your nose, letting the belly rise while the chest stays still.",
+        "Breathe out slowly through the mouth, letting the belly fall.",
+        "Keep it relaxed; don't force big breaths."
+      ],
+      "howMuch": "5 to 10 minutes, 2 to 3 times a day, and whenever you feel breathless.",
+      "category": "Breathing and Respiratory Exercises",
+      "categorySlug": "breathing-and-respiratory-exercises",
+      "image": null
+    },
+    {
+      "slug": "dumbbell-exercises",
+      "title": "Dumbbell Exercises",
+      "summary": "Dumbbell exercises for rehab, osteoporosis and strength.",
+      "steps": [
+        "Start with a weight you can lift 10 to 12 times with good form.",
+        "Core exercises: goblet squat, Romanian deadlift, bent-over row, overhead press, biceps curl and calf raises.",
+        "Lift in 2 seconds, lower in 3 seconds.",
+        "Keep the back neutral and core braced.",
+        "Increase weight by small amounts when 12 repetitions are easy."
+      ],
+      "howMuch": "2 to 3 sets of 8 to 12 repetitions, 2 to 3 days a week.",
+      "category": "Muscle Strengthening Exercises",
+      "categorySlug": "muscle-strengthening-exercises",
+      "image": "/gifs/dumbbell-exercises.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Biceps_curl-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "elbow-flexion-extension",
+      "title": "Elbow Flexion and Extension",
+      "summary": "Elbow flexion and extension exercises after fractures and stiffness.",
+      "steps": [
+        "Sit with your elbow supported on a table or pillow.",
+        "Slowly bend the elbow as far as possible, using the other hand to assist.",
+        "Hold 5 seconds, then straighten as far as possible and hold.",
+        "Strengthening: hold a light weight and do biceps curls, then triceps extensions overhead or lying down."
+      ],
+      "howMuch": "Range: 10 repetitions, 3 to 4 times a day. Strength: 10 to 15 repetitions, 2 to 3 sets.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    },
+    {
+      "slug": "elbow-isometric-exercises",
+      "title": "Elbow Isometric Exercises",
+      "summary": "Elbow isometric exercises for tennis elbow, golfer's elbow and early rehab.",
+      "steps": [
+        "Wrist extension isometric: rest your forearm on a table, palm down. Place the other hand on the back of the hand and push up into it without moving.",
+        "Wrist flexion isometric: turn the palm up and push up against the other hand.",
+        "Elbow bend isometric: press the palm up against the underside of a table.",
+        "Hold each 30 to 45 seconds at a moderate effort."
+      ],
+      "howMuch": "5 holds, 1 to 2 times a day.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    },
+    {
+      "slug": "fall-prevention-exercises",
+      "title": "Fall Prevention Exercises",
+      "summary": "Fall prevention exercises for seniors.",
+      "steps": [
+        "Sit to stand: 10 repetitions.",
+        "Calf and toe raises holding a counter: 10 each.",
+        "Single leg stand: 10 to 30 seconds each leg, holding on.",
+        "Heel-to-toe standing and walking along the counter.",
+        "Side steps along the counter.",
+        "Make the home safer too: remove loose rugs, add night lights and grab rails."
+      ],
+      "howMuch": "At least 3 times a week, 30 minutes a session, continued long term.",
+      "category": "Senior Citizen Exercises",
+      "categorySlug": "senior-citizen-exercises",
+      "image": null
+    },
+    {
+      "slug": "fine-motor-exercises",
+      "title": "Fine Motor Exercises",
+      "summary": "Fine motor exercises for hand dexterity after stroke, in Parkinson's and for children.",
+      "steps": [
+        "Pick up coins, beads or beans and place them in a container.",
+        "Button and unbutton a shirt on a table.",
+        "Roll, pinch and pull therapy putty.",
+        "Stack small blocks or turn cards over.",
+        "Trace shapes and letters with a pen."
+      ],
+      "howMuch": "10 to 15 minutes, 1 to 2 times a day.",
+      "category": "Neurological Rehabilitation Exercises",
+      "categorySlug": "neurological-rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "finger-flexion-extension",
+      "title": "Finger Flexion and Extension",
+      "summary": "Finger flexion and extension exercises for hand stiffness after injury or surgery.",
+      "steps": [
+        "Rest your forearm on a table.",
+        "Make a full fist, bending all finger joints, and hold 3 seconds.",
+        "Open the hand fully, straightening all fingers, and hold 3 seconds.",
+        "Block each joint separately: hold the finger below a joint and bend only that joint."
+      ],
+      "howMuch": "10 repetitions, every 2 to 3 hours while stiffness is present.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    },
+    {
+      "slug": "functional-movement-training",
+      "title": "Functional Movement Training",
+      "summary": "Functional movement training for stroke, neurological and elderly rehab.",
+      "steps": [
+        "Identify priority tasks with the person and family.",
+        "Break each into steps, e.g. rolling, pushing up, swinging legs off the bed.",
+        "Practise each step, then the whole task.",
+        "Adjust the environment: bed height, rails, furniture layout.",
+        "Repeat daily in the real setting."
+      ],
+      "howMuch": "Daily, built into routine care.",
+      "category": "Neurological Rehabilitation Exercises",
+      "categorySlug": "neurological-rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "functional-reach",
+      "title": "Functional Reach Exercises",
+      "summary": "Functional reach exercises for balance and fall prevention.",
+      "steps": [
+        "Stand side-on to a counter, holding it with one hand.",
+        "Reach forward with the other arm as far as you can without stepping.",
+        "Hold 3 seconds and return.",
+        "Reach sideways, across the body and down towards the floor.",
+        "Seated version: sit on a firm chair and reach in all directions."
+      ],
+      "howMuch": "10 reaches in each direction, once a day.",
+      "category": "Balance and Mobility Exercises",
+      "categorySlug": "balance-and-mobility-exercises",
+      "image": null
+    },
+    {
+      "slug": "functional-strengthening",
+      "title": "Functional Strengthening",
+      "summary": "Functional strengthening and functional rehabilitation exercises.",
+      "steps": [
+        "Squat to lift: lift a light box from a chair using a squat, keeping the back neutral.",
+        "Farmer's carry: walk holding a bag in each hand, standing tall.",
+        "Step and reach: step forward and reach to a shelf.",
+        "Floor transfer: practise getting down to and up from the floor safely.",
+        "Progress load and complexity gradually."
+      ],
+      "howMuch": "3 to 5 movements, 2 to 3 sets of 8 to 10, 2 to 3 days a week.",
+      "category": "Muscle Strengthening Exercises",
+      "categorySlug": "muscle-strengthening-exercises",
+      "image": null
+    },
+    {
+      "slug": "gait-training",
+      "title": "Gait Training",
+      "summary": "Gait training for walking recovery after stroke, surgery and Parkinson's.",
+      "steps": [
+        "Assessment: we look at step length, heel strike, knee control, trunk posture and speed.",
+        "Drills: marching, step-throughs, heel-toe practice and weight shifting.",
+        "Walking with cues: counting, a metronome beat or floor markers, especially in Parkinson's.",
+        "Walking aid training: using a stick, crutches or walker correctly, and progressing off them.",
+        "Real-world practice: turns, uneven ground, slopes and doorways."
+      ],
+      "howMuch": "Daily walking practice, with specific drills 3 to 5 times a week as prescribed.",
+      "category": "Balance and Mobility Exercises",
+      "categorySlug": "balance-and-mobility-exercises",
+      "image": null
+    },
+    {
+      "slug": "glute-bridge",
+      "title": "Glute Bridge",
+      "summary": "Glute bridge exercise for back, hip and knee pain.",
+      "steps": [
+        "Lie on your back, knees bent, feet flat and hip width apart.",
+        "Tighten your tummy gently and squeeze your buttocks.",
+        "Lift your hips until your body forms a straight line from shoulders to knees.",
+        "Hold 3 to 5 seconds, then lower slowly.",
+        "Progress with a band around the knees, a longer hold, or a single-leg bridge."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 to 3 sets, once a day.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": "/gifs/glute-bridge.gif",
+      "imageCredit": {
+        "author": "Everkinetic (adapted)",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Bridging_1.svg"
+      }
+    },
+    {
+      "slug": "grip-strengthening",
+      "title": "Grip Strengthening",
+      "summary": "Grip strengthening exercises with a ball or putty.",
+      "steps": [
+        "Hold a soft ball or putty in your palm.",
+        "Squeeze firmly with all fingers, hold 3 to 5 seconds, then relax fully.",
+        "Progress to firmer putty or longer holds.",
+        "Add pinch grip: squeeze the putty between thumb and each fingertip."
+      ],
+      "howMuch": "10 to 15 squeezes, 2 to 3 sets, once or twice a day.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": "/gifs/grip-strengthening.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Grip_strength-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "hamstring-curls",
+      "title": "Hamstring Curls",
+      "summary": "Hamstring curl exercise for knee strength and ACL rehab.",
+      "steps": [
+        "Standing: hold a chair back. Bend one knee to bring the heel towards your buttock, keeping the thighs level.",
+        "Lying face down: bend the knee to bring the heel up, then lower slowly.",
+        "Band: lie face down with a band around the ankle anchored low in front, and curl against it.",
+        "Lower slowly each time."
+      ],
+      "howMuch": "10 to 15 repetitions each leg, 2 to 3 sets, once a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": "/gifs/hamstring-curls.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Knee_curl-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "hamstring-stretch",
+      "title": "Hamstring Stretch",
+      "summary": "Hamstring stretch for tight hamstrings, knee and back pain.",
+      "steps": [
+        "Lying (safest for the back): lie on your back and loop a towel around one foot.",
+        "Straighten the knee and raise the leg until you feel a stretch behind the thigh.",
+        "Hold 30 seconds, keeping the other leg relaxed.",
+        "Seated: sit on the edge of a chair, one leg straight with heel on the floor. Lean forward from the hips with a straight back."
+      ],
+      "howMuch": "3 holds of 30 seconds each leg, once or twice a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": "/gifs/hamstring-stretch.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Hamstring_stretch-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "head-control-exercises",
+      "title": "Head Control Exercises",
+      "summary": "Head control exercises for babies and children with developmental delay.",
+      "steps": [
+        "Tummy time with toys at eye level.",
+        "Supported sitting on your lap, facing you, while you talk and sing.",
+        "Pull to sit: holding the baby's forearms, gently bring them from lying to sitting, watching that the head follows.",
+        "Side-lying play to encourage turning."
+      ],
+      "howMuch": "Several short sessions daily, as part of play.",
+      "category": "Pediatric Exercises",
+      "categorySlug": "pediatric-exercises",
+      "image": null
+    },
+    {
+      "slug": "heel-slides",
+      "title": "Heel Slides",
+      "summary": "Heel slides exercise to improve knee bending after surgery.",
+      "steps": [
+        "Lie on your back with legs straight. A plastic bag under the heel reduces friction.",
+        "Slowly slide your heel towards your buttock, bending the knee as far as you can.",
+        "Hold 5 seconds at the end, then slide back.",
+        "For more bend, loop a towel around the foot and pull gently."
+      ],
+      "howMuch": "10 to 15 repetitions, 3 times a day in early rehab.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "heel-walking",
+      "title": "Heel Walking",
+      "summary": "Heel walking exercise for shin strength and ankle control.",
+      "steps": [
+        "Stand next to a wall or counter.",
+        "Lift your toes and the front of your feet off the ground.",
+        "Take small steps forward on your heels.",
+        "Keep an upright posture; don't lean back or stick your bottom out.",
+        "Walk 10 metres, rest and repeat."
+      ],
+      "howMuch": "3 to 4 lengths of 10 metres, once a day.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": null
+    },
+    {
+      "slug": "hip-abduction",
+      "title": "Hip Abduction",
+      "summary": "Hip abduction exercise for glute medius strength, hip and knee pain.",
+      "steps": [
+        "Side-lying: lie on your side with the bottom knee bent and the top leg straight in line with your body.",
+        "Turn the top toes slightly down and lift the leg towards the ceiling, leading with the heel.",
+        "Lift about 30 to 40 centimetres, hold 2 seconds and lower slowly.",
+        "Standing: hold a support and lift the leg out to the side without leaning.",
+        "Progress with an ankle weight or band around the ankles."
+      ],
+      "howMuch": "10 to 15 repetitions each side, 2 to 3 sets, once a day.",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": "/gifs/hip-abduction.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Hip_abduction-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "hip-adduction",
+      "title": "Hip Adduction",
+      "summary": "Hip adduction exercises for groin strength and knee support.",
+      "steps": [
+        "Ball squeeze: lie on your back with knees bent and a small ball or folded pillow between your knees.",
+        "Squeeze the ball for 5 to 10 seconds, then relax.",
+        "Side-lying: lie on your side, top leg bent with the foot in front of the bottom knee.",
+        "Lift the straight bottom leg a few centimetres, hold 2 seconds and lower."
+      ],
+      "howMuch": "10 repetitions, 2 to 3 sets, once a day.",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": null
+    },
+    {
+      "slug": "hip-extension",
+      "title": "Hip Extension",
+      "summary": "Hip extension exercise for glute strength after hip pain or surgery.",
+      "steps": [
+        "Standing: hold a chair back or counter for support.",
+        "Keeping your trunk upright and knee straight, move one leg backwards a short distance.",
+        "Squeeze the buttock at the end, hold 2 seconds, then return.",
+        "Lying: lie face down, tighten the buttock and lift a straight leg a few centimetres off the bed.",
+        "Progress with an ankle weight or band."
+      ],
+      "howMuch": "10 to 15 repetitions each leg, 2 to 3 sets, once a day.",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": null
+    },
+    {
+      "slug": "hip-flexion",
+      "title": "Hip Flexion",
+      "summary": "Hip flexion exercises for walking, stairs and hip rehab.",
+      "steps": [
+        "Seated: sit upright in a firm chair. Lift one knee a few centimetres off the seat, hold 2 seconds, lower.",
+        "Standing: hold a support and lift one knee towards hip height, like marching.",
+        "Lying: slide your heel up the bed bending the hip and knee, then slide back down.",
+        "Progress with an ankle weight."
+      ],
+      "howMuch": "10 to 15 repetitions each leg, 2 sets, once or twice a day.",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": null
+    },
+    {
+      "slug": "hip-flexor-stretch",
+      "title": "Hip Flexor Stretch",
+      "summary": "Hip flexor stretch for tight hips and lower back pain.",
+      "steps": [
+        "Kneel on your right knee on a cushion, left foot flat in front with the knee at 90 degrees.",
+        "Tuck your tailbone under and gently squeeze the right buttock.",
+        "Shift your weight slightly forward until you feel a stretch at the front of the right hip.",
+        "Keep your trunk upright; don't lean back.",
+        "Hold 30 seconds and switch sides."
+      ],
+      "howMuch": "2 to 3 holds per side, once or twice a day.",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": null
+    },
+    {
+      "slug": "hip-rotation-exercise",
+      "title": "Hip Rotation Exercises",
+      "summary": "Hip rotation exercises for stiffness and hip arthritis.",
+      "steps": [
+        "Seated rotation: sit upright on a high chair with knees at 90 degrees. Keeping the knee still, swing the foot outwards (internal rotation), then inwards (external rotation).",
+        "Lying: lie on your back with knees bent and let one knee fall outwards gently, then bring it back.",
+        "Band: sit with a band around the ankle anchored to the side and rotate the foot against it."
+      ],
+      "howMuch": "10 to 15 repetitions each direction, 2 sets, once a day.",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": null
+    },
+    {
+      "slug": "incentive-spirometry",
+      "title": "Incentive Spirometry",
+      "summary": "Incentive spirometry exercises after surgery.",
+      "steps": [
+        "Sit upright.",
+        "Breathe out normally, then seal your lips around the mouthpiece.",
+        "Breathe in slowly and deeply, raising the indicator towards your target.",
+        "Hold your breath for 3 to 5 seconds.",
+        "Breathe out and rest. Cough to clear any mucus."
+      ],
+      "howMuch": "10 breaths every hour while awake after surgery, or as your team advises.",
+      "category": "Breathing and Respiratory Exercises",
+      "categorySlug": "breathing-and-respiratory-exercises",
+      "image": null
+    },
+    {
+      "slug": "isometric-exercises",
+      "title": "Isometric Exercises",
+      "summary": "Isometric (static hold) exercises for the knee, shoulder, neck and back.",
+      "steps": [
+        "Choose a position that is comfortable, such as a quadriceps set, wall squat or wall press.",
+        "Contract the muscle to a moderate effort without moving the joint.",
+        "Hold 5 to 45 seconds depending on the goal.",
+        "Breathe normally throughout.",
+        "Relax fully between holds."
+      ],
+      "howMuch": "5 to 10 holds per exercise, once or twice a day.",
+      "category": "Muscle Strengthening Exercises",
+      "categorySlug": "muscle-strengthening-exercises",
+      "image": null
+    },
+    {
+      "slug": "it-band-stretch",
+      "title": "IT Band Stretch",
+      "summary": "IT band stretch for outer knee and hip pain.",
+      "steps": [
+        "Stand next to a wall with your right side towards it.",
+        "Cross your left leg in front of your right.",
+        "Push your right hip towards the wall until you feel a stretch on the outer right hip.",
+        "Hold 30 seconds, switch sides."
+      ],
+      "howMuch": "3 holds each side, once a day.",
+      "category": "Stretching Exercises",
+      "categorySlug": "stretching-exercises",
+      "image": null
+    },
+    {
+      "slug": "joint-replacement-rehabilitation-exercises",
+      "title": "Joint Replacement Rehabilitation Exercises",
+      "summary": "Rehabilitation exercises after joint replacement: knee, hip and shoulder.",
+      "steps": [
+        "Early circulation and breathing exercises.",
+        "Range of motion within your surgeon's limits.",
+        "Muscle activation and progressive strengthening.",
+        "Walking or arm function training.",
+        "Return to daily activities and hobbies."
+      ],
+      "howMuch": "Several short sessions a day early on, then daily programmes over months.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "kegel-exercises",
+      "title": "Kegel Exercises",
+      "summary": "Kegel exercises (pelvic floor exercises) for incontinence, prolapse and after childbirth.",
+      "steps": [
+        "Sit, lie or stand comfortably and breathe normally.",
+        "Squeeze and lift the muscles as if stopping wind and holding in urine at the same time.",
+        "Hold for up to 10 seconds, then relax fully for the same time.",
+        "Then do 10 quick squeezes, relaxing between each.",
+        "Practise \"the knack\": squeeze before you cough, sneeze or lift."
+      ],
+      "howMuch": "Up to 10 long holds and 10 quick squeezes, 3 times a day, for at least 3 months.",
+      "category": "Women's Health Exercises",
+      "categorySlug": "women-s-health-exercises",
+      "image": null
+    },
+    {
+      "slug": "knee-extension-stretch",
+      "title": "Knee Extension Stretch",
+      "summary": "Knee extension stretch (heel prop) to straighten the knee after surgery.",
+      "steps": [
+        "Sit or lie with your heel on a rolled towel or cushion so the back of the knee is unsupported.",
+        "Relax and let the knee sag towards straight.",
+        "Tighten the thigh muscle every so often to push it straighter.",
+        "Hold for 5 to 10 minutes.",
+        "Never put a pillow under the knee itself for long periods after surgery."
+      ],
+      "howMuch": "5 to 10 minutes, 3 to 4 times a day in early rehab.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "knee-to-chest-stretch",
+      "title": "Knee to Chest Stretch",
+      "summary": "Knee to chest stretch for lower back pain and stiffness.",
+      "steps": [
+        "Lie on your back with knees bent.",
+        "Draw one knee towards your chest, holding behind the thigh.",
+        "Hold 20 to 30 seconds, then lower and swap legs.",
+        "Progress to drawing both knees in together.",
+        "Keep your head resting on the floor."
+      ],
+      "howMuch": "3 holds each, 1 to 2 times a day.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "levator-scapulae-stretch",
+      "title": "Levator Scapulae Stretch",
+      "summary": "Levator scapulae stretch for neck and shoulder blade pain.",
+      "steps": [
+        "Sit tall and hold the chair seat with your right hand.",
+        "Turn your head about 45 degrees to the left, as if looking at your left armpit.",
+        "Gently lower your nose towards the armpit.",
+        "Rest your left hand on the back of your head to add light weight.",
+        "Hold 20 to 30 seconds; you should feel it at the back right of the neck. Switch sides."
+      ],
+      "howMuch": "2 to 3 holds per side, twice a day.",
+      "category": "Neck Exercises",
+      "categorySlug": "neck-exercises",
+      "image": null
+    },
+    {
+      "slug": "long-arc-quads",
+      "title": "Long Arc Quads",
+      "summary": "Long arc quad (seated knee extension) exercise for knee strength.",
+      "steps": [
+        "Sit upright in a firm chair with feet flat on the floor.",
+        "Slowly straighten one knee until the leg is out straight.",
+        "Tighten the thigh and hold 3 to 5 seconds.",
+        "Lower slowly over 3 seconds.",
+        "Add an ankle weight when 15 repetitions become easy."
+      ],
+      "howMuch": "10 to 15 repetitions each leg, 2 to 3 sets, once a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": "/gifs/long-arc-quads.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Knee_extension-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "lumbar-rotation-stretch",
+      "title": "Lumbar Rotation Stretch",
+      "summary": "Lumbar rotation stretch (knee rolls) for lower back pain.",
+      "steps": [
+        "Lie on your back with knees bent and feet together.",
+        "Keep your shoulders flat on the floor.",
+        "Slowly let both knees fall to one side as far as comfortable.",
+        "Return to the middle and repeat to the other side.",
+        "For a stretch, hold at the end of the range for 20 seconds."
+      ],
+      "howMuch": "10 slow rolls each side, twice a day.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "lunges",
+      "title": "Lunges",
+      "summary": "Lunge exercise technique for leg strength and balance.",
+      "steps": [
+        "Start with a static lunge: stand in a long stride with the back heel lifted.",
+        "Lower straight down, bending both knees, until the back knee nears the floor.",
+        "Keep the front knee over the ankle and trunk upright.",
+        "Push back up through the front heel.",
+        "Progress to reverse lunges, then walking lunges."
+      ],
+      "howMuch": "8 to 12 repetitions each leg, 2 to 3 sets, 2 to 3 days a week.",
+      "category": "Muscle Strengthening Exercises",
+      "categorySlug": "muscle-strengthening-exercises",
+      "image": "/gifs/lunges.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Lunge-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "mckenzie-extension",
+      "title": "McKenzie Extension",
+      "summary": "McKenzie extension (prone press-up) for disc bulge, sciatica and low back pain.",
+      "steps": [
+        "Lie face down with hands under your shoulders, as if starting a push-up.",
+        "Relax your back and buttocks completely.",
+        "Slowly straighten your arms to lift your chest, keeping your hips on the floor.",
+        "Go as far as comfortable, pause for a second, then lower.",
+        "Earlier stage: rest on your elbows for a minute instead of pressing up fully."
+      ],
+      "howMuch": "10 repetitions, several times a day during a flare, as guided by your physiotherapist.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "median-nerve-glides",
+      "title": "Median Nerve Glides",
+      "summary": "Median nerve glides for carpal tunnel syndrome.",
+      "steps": [
+        "Start with a fist, wrist straight and elbow bent, hand near the shoulder.",
+        "Straighten the fingers and thumb.",
+        "Bend the wrist back.",
+        "Turn the palm up.",
+        "Gently move the thumb out to the side.",
+        "Hold each stage for 2 seconds, then return to start."
+      ],
+      "howMuch": "5 repetitions, 2 to 3 times a day. It should feel mild, never painful.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    },
+    {
+      "slug": "mini-squats",
+      "title": "Mini Squats",
+      "summary": "Mini squat exercise for knee pain and strength.",
+      "steps": [
+        "Stand with feet hip width apart, holding a counter or chair back.",
+        "Push your hips back slightly and bend both knees a small amount.",
+        "Keep your weight through the heels and knees in line with the second toe.",
+        "Hold 2 seconds, then stand up by squeezing your buttocks."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 to 3 sets, once a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "motor-control-exercises",
+      "title": "Motor Control Exercises",
+      "summary": "Motor control exercises for stroke recovery and back pain.",
+      "steps": [
+        "Break a task into parts, such as reaching to a cup: shoulder lift, elbow straightening, hand opening.",
+        "Practise each part slowly with correct form.",
+        "Recombine into the full task.",
+        "Use feedback such as mirrors, touch cues or video.",
+        "Increase speed and complexity as control improves."
+      ],
+      "howMuch": "Short, frequent sessions daily. High repetition is important.",
+      "category": "Neurological Rehabilitation Exercises",
+      "categorySlug": "neurological-rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "neck-extension-exercise",
+      "title": "Neck Extension Exercise",
+      "summary": "Neck extension exercise for stiffness and posture.",
+      "steps": [
+        "Seated version: sit tall, do a small chin tuck, then slowly look up towards the ceiling, keeping the chin slightly tucked so the whole neck moves rather than hinging at the top.",
+        "Hold 2 to 3 seconds and return to neutral.",
+        "Lying version: lie face down with your forehead on a folded towel. Tuck the chin slightly and lift the forehead a few centimetres off the towel.",
+        "Hold 5 seconds and lower slowly."
+      ],
+      "howMuch": "10 repetitions, once or twice a day. Build to 3 sets of 10 for the lying version.",
+      "category": "Neck Exercises",
+      "categorySlug": "neck-exercises",
+      "image": null
+    },
+    {
+      "slug": "neck-flexion-stretch",
+      "title": "Neck Flexion Stretch",
+      "summary": "Neck flexion stretch for tight neck muscles.",
+      "steps": [
+        "Sit upright with both feet flat on the floor.",
+        "Slowly lower your chin towards your chest until you feel a stretch at the back of the neck.",
+        "For a stronger stretch, rest one hand lightly on the back of your head. Let the weight of the hand do the work; don't pull.",
+        "Hold for 20 to 30 seconds and breathe normally.",
+        "Lift the head slowly back to upright."
+      ],
+      "howMuch": "Hold 20 to 30 seconds, repeat 2 to 3 times, 2 to 3 times a day.",
+      "category": "Neck Exercises",
+      "categorySlug": "neck-exercises",
+      "image": null
+    },
+    {
+      "slug": "neurodevelopmental-exercises",
+      "title": "Neurodevelopmental Exercises",
+      "summary": "Neurodevelopmental exercises (NDT) for cerebral palsy and developmental delay.",
+      "steps": [
+        "The therapist positions and supports the child to encourage active movement.",
+        "Activities follow developmental stages: head control, rolling, sitting, crawling, standing.",
+        "Play motivates movement, such as reaching for toys.",
+        "Parents learn handling and positioning for daily routines."
+      ],
+      "howMuch": "Regular therapy sessions with daily home practice by parents.",
+      "category": "Neurological Rehabilitation Exercises",
+      "categorySlug": "neurological-rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "paralysis-rehabilitation-exercises",
+      "title": "Paralysis Rehabilitation Exercises",
+      "summary": "Paralysis rehabilitation exercises for stroke, spinal cord injury and nerve conditions.",
+      "steps": [
+        "Passive range of motion for paralysed limbs, taught to carers.",
+        "Positioning and pressure relief routines.",
+        "Strengthening for muscles with activity.",
+        "Breathing exercises.",
+        "Transfer and mobility training."
+      ],
+      "howMuch": "Daily, integrated into care routines.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "parkinsons-exercise-program",
+      "title": "Parkinson's Exercise Program",
+      "summary": "Parkinson's exercise programme: big movements, walking cues, balance and strength.",
+      "steps": [
+        "Warm up with big arm and leg movements.",
+        "Walking with large steps and rhythmic cues.",
+        "Balance training: stepping, turning, reaching.",
+        "Strength: sit to stand, squats, band work.",
+        "Posture: thoracic extension and chest stretches."
+      ],
+      "howMuch": "Most days of the week, with a mix of aerobic, strength and balance work.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "range-of-motion-exercises",
+      "title": "Passive, Assisted and Active Range of Motion",
+      "summary": "Passive, active-assisted and active range of motion exercises for paralysis, stroke and bedridden patients.",
+      "steps": [
+        "Passive: the carer supports the limb above and below the joint and moves it slowly through its comfortable range, e.g. bending and straightening the elbow, knee and hip.",
+        "Assisted: the person tries to move while the carer or a strap helps complete the movement.",
+        "Active: the person moves the joint unaided.",
+        "Move each joint slowly, 10 times, never forcing."
+      ],
+      "howMuch": "Once or twice a day for every affected joint.",
+      "category": "Neurological Rehabilitation Exercises",
+      "categorySlug": "neurological-rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "pediatric-strengthening",
+      "title": "Pediatric Strengthening",
+      "summary": "Strengthening exercises for children with low tone and developmental conditions.",
+      "steps": [
+        "Sit to stand from small chairs during games.",
+        "Stepping up and down from a step or low bench.",
+        "Wheelbarrow walking to build arm and trunk strength.",
+        "Jumping, hopping and climbing play equipment.",
+        "Bridging and superman positions made into games."
+      ],
+      "howMuch": "Short daily sessions of 15 to 20 minutes.",
+      "category": "Pediatric Exercises",
+      "categorySlug": "pediatric-exercises",
+      "image": null
+    },
+    {
+      "slug": "pediatric-stretching",
+      "title": "Pediatric Stretching",
+      "summary": "Stretching exercises for children with cerebral palsy, clubfoot and torticollis.",
+      "steps": [
+        "Choose a calm time, such as after a bath.",
+        "Hold the limb above and below the joint.",
+        "Move slowly to a gentle stretch and hold for 20 to 30 seconds.",
+        "Common stretches: calves, hamstrings, hip adductors, and neck side bending in torticollis.",
+        "Keep it playful with songs or counting."
+      ],
+      "howMuch": "Daily, as prescribed.",
+      "category": "Pediatric Exercises",
+      "categorySlug": "pediatric-exercises",
+      "image": null
+    },
+    {
+      "slug": "pelvic-mobility-exercises",
+      "title": "Pelvic Mobility Exercises",
+      "summary": "Pelvic mobility exercises for pelvic girdle pain and pregnancy.",
+      "steps": [
+        "Pelvic tilts in lying, sitting or on a ball.",
+        "Pelvic circles sitting on a birthing ball.",
+        "Cat cow on hands and knees.",
+        "Hip rolls: knees bent, let them fall gently side to side.",
+        "Child's pose with wide knees."
+      ],
+      "howMuch": "5 to 10 minutes daily.",
+      "category": "Women's Health Exercises",
+      "categorySlug": "women-s-health-exercises",
+      "image": null
+    },
+    {
+      "slug": "pelvic-tilts",
+      "title": "Pelvic Tilts",
+      "summary": "Pelvic tilt exercise for lower back pain, pregnancy and postnatal recovery.",
+      "steps": [
+        "Lie on your back with knees bent and feet flat, hip width apart.",
+        "Tighten your lower tummy gently and flatten your lower back into the floor by tilting the pelvis backwards.",
+        "Hold for 5 seconds and breathe normally.",
+        "Relax, then let the lower back arch slightly off the floor.",
+        "Move smoothly between the two positions."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 times a day. It can also be done sitting or standing against a wall.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": "/gifs/pelvic-tilts.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Pelvic_tilt-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "pendulum-exercise",
+      "title": "Pendulum Exercise",
+      "summary": "Pendulum exercise for shoulder pain, frozen shoulder and after surgery.",
+      "steps": [
+        "Stand beside a table and lean forward, supporting yourself with your good hand on the table.",
+        "Let the painful arm hang straight down, completely relaxed.",
+        "Shift your body weight gently so the arm swings forwards and backwards, then side to side, then in small circles.",
+        "The movement should come from your body, not from lifting the arm.",
+        "Gradually make the circles a little bigger if comfortable."
+      ],
+      "howMuch": "30 seconds to 1 minute in each direction, 3 to 4 times a day.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "piriformis-stretch",
+      "title": "Piriformis Stretch",
+      "summary": "Piriformis and glute stretch for buttock pain and sciatica.",
+      "steps": [
+        "Figure four: lie on your back with knees bent. Cross the right ankle over the left knee.",
+        "Draw the left thigh towards your chest until you feel a stretch in the right buttock. Hold 30 seconds.",
+        "Glute stretch: lie on your back and pull the right knee towards the left shoulder. Hold 30 seconds.",
+        "Switch sides."
+      ],
+      "howMuch": "2 to 3 holds each side, once or twice a day.",
+      "category": "Stretching Exercises",
+      "categorySlug": "stretching-exercises",
+      "image": null
+    },
+    {
+      "slug": "plantar-fascia-stretch",
+      "title": "Plantar Fascia Stretch",
+      "summary": "Plantar fascia stretch for heel pain and plantar fasciitis.",
+      "steps": [
+        "Sit and cross the affected foot over the other knee.",
+        "Hold the base of your toes and pull them back towards your shin until you feel a stretch in the arch.",
+        "Hold 10 to 30 seconds.",
+        "Roll the arch over a frozen water bottle or ball for 1 to 2 minutes.",
+        "Do the stretch before getting out of bed in the morning."
+      ],
+      "howMuch": "3 holds, 3 times a day, including before first steps.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": null
+    },
+    {
+      "slug": "post-fracture-exercises",
+      "title": "Post Fracture Exercises",
+      "summary": "Exercises to rebuild movement and strength after a fracture.",
+      "steps": [
+        "While in a cast: move the joints that are free, such as fingers or toes.",
+        "After cast removal: gentle range of motion for the affected joint.",
+        "Weight bearing as allowed by your doctor.",
+        "Strengthening once movement returns.",
+        "Functional and balance training to finish."
+      ],
+      "howMuch": "Early stage: short sessions several times a day. Later stages: daily programmes.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "post-hip-replacement-exercises",
+      "title": "Post Hip Replacement Exercises",
+      "summary": "Exercises to recover movement and strength after hip replacement surgery.",
+      "steps": [
+        "Early: ankle pumps, buttock squeezes, quad sets, heel slides within limits.",
+        "Standing exercises: hip abduction, extension, mini squats holding on.",
+        "Walking practice with an aid, stair training.",
+        "Later: bridges, step ups, balance and walking distance.",
+        "Follow precautions on bending, crossing legs and twisting."
+      ],
+      "howMuch": "2 to 3 times a day early, then daily.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "post-knee-replacement-exercises",
+      "title": "Post Knee Replacement Exercises",
+      "summary": "Exercises to recover movement and strength after knee replacement surgery.",
+      "steps": [
+        "Week 1 to 2: ankle pumps, quad sets, straight leg raises, heel slides and knee extension stretches.",
+        "Week 2 to 6: short and long arc quads, sit to stand, walking with an aid, stairs.",
+        "Week 6 onwards: step ups, mini squats, balance work, cycling.",
+        "Ice and elevation help manage swelling."
+      ],
+      "howMuch": "Exercises 2 to 3 times a day in the first weeks, then daily.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "post-stroke-exercises",
+      "title": "Post Stroke Exercises",
+      "summary": "Exercises after stroke for arm, leg, balance and walking recovery.",
+      "steps": [
+        "Range of motion for the affected arm and leg.",
+        "Weight shifting and sit to stand.",
+        "Arm and hand tasks: reaching, grasping, releasing.",
+        "Walking and balance practice.",
+        "Daily tasks practised with the affected side."
+      ],
+      "howMuch": "As much practice as possible, spread through the day, as set by your physiotherapist.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "post-surgery-exercises",
+      "title": "Post Surgery Exercises",
+      "summary": "Exercises to recover safely after orthopaedic and spinal surgery.",
+      "steps": [
+        "Day 1 onwards: ankle pumps, deep breathing, getting out of bed.",
+        "Early phase: gentle range of motion and muscle activation.",
+        "Middle phase: strengthening and walking progression.",
+        "Late phase: functional and sport-specific training.",
+        "Always follow your surgeon's restrictions."
+      ],
+      "howMuch": "Short, frequent sessions early; longer programmes later.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "postnatal-core-exercises",
+      "title": "Postnatal Core Exercises",
+      "summary": "Postnatal core exercises and core activation after childbirth and caesarean.",
+      "steps": [
+        "Breathing: diaphragmatic breathing with gentle pelvic floor lift on the out-breath.",
+        "Core activation: lying on your back, draw in the lower tummy slightly as you exhale.",
+        "Heel slides and leg lifts while keeping the tummy flat.",
+        "Glute bridges and side-lying exercises.",
+        "Progress to dead bugs and modified planks, watching for doming."
+      ],
+      "howMuch": "10 to 15 minutes daily, progressing over weeks.",
+      "category": "Women's Health Exercises",
+      "categorySlug": "women-s-health-exercises",
+      "image": null
+    },
+    {
+      "slug": "prenatal-mobility-exercises",
+      "title": "Prenatal Mobility Exercises",
+      "summary": "Prenatal mobility exercises for back and pelvic comfort in pregnancy.",
+      "steps": [
+        "Cat cow on hands and knees.",
+        "Pelvic tilts against a wall.",
+        "Side-lying hip openers.",
+        "Seated hip and ankle circles.",
+        "Pelvic floor exercises and breathing."
+      ],
+      "howMuch": "10 to 20 minutes daily if well.",
+      "category": "Women's Health Exercises",
+      "categorySlug": "women-s-health-exercises",
+      "image": null
+    },
+    {
+      "slug": "pursed-lip-breathing",
+      "title": "Pursed Lip Breathing",
+      "summary": "Pursed lip breathing technique for breathlessness.",
+      "steps": [
+        "Relax your shoulders.",
+        "Breathe in through your nose for 2 counts.",
+        "Purse your lips as if blowing out a candle.",
+        "Breathe out gently for 4 counts.",
+        "Use it during exertion, such as climbing stairs."
+      ],
+      "howMuch": "Practise for a few minutes several times a day, then use it during activity.",
+      "category": "Breathing and Respiratory Exercises",
+      "categorySlug": "breathing-and-respiratory-exercises",
+      "image": null
+    },
+    {
+      "slug": "quadriceps-sets",
+      "title": "Quadriceps Sets",
+      "summary": "Quadriceps sets (static quads) after knee surgery or injury.",
+      "steps": [
+        "Sit or lie with your leg straight, a small rolled towel under the knee.",
+        "Tighten the muscle on the front of your thigh to press the knee down into the towel.",
+        "Your kneecap should move slightly upwards.",
+        "Hold 5 to 10 seconds, then relax fully."
+      ],
+      "howMuch": "10 repetitions, every hour or two while awake in the early days after surgery, then 3 times a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "quadriceps-stretch",
+      "title": "Quadriceps Stretch",
+      "summary": "Quadriceps stretch for knee pain and tight thighs.",
+      "steps": [
+        "Stand holding a support with your left hand.",
+        "Bend your right knee and hold the ankle with your right hand.",
+        "Bring the heel towards your buttock, keeping knees together.",
+        "Tuck your pelvis slightly to increase the stretch at the front of the hip.",
+        "Hold 30 seconds and switch."
+      ],
+      "howMuch": "3 holds each leg, once or twice a day.",
+      "category": "Stretching Exercises",
+      "categorySlug": "stretching-exercises",
+      "image": "/gifs/quadriceps-stretch.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Quad_stretch-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "resistance-band-ankle-exercises",
+      "title": "Resistance Band Ankle Exercises",
+      "summary": "Resistance band ankle exercises: dorsiflexion, plantarflexion, inversion and eversion.",
+      "steps": [
+        "Sit with your leg straight and a band looped around the ball of the foot.",
+        "Plantarflexion: hold both ends and point the foot down against the band.",
+        "Dorsiflexion: anchor the band in front and pull the foot up towards you.",
+        "Inversion: anchor the band to the outside and turn the sole of the foot inwards.",
+        "Eversion: anchor it to the inside and turn the sole outwards."
+      ],
+      "howMuch": "15 repetitions in each direction, 2 to 3 sets, once a day.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": null
+    },
+    {
+      "slug": "resistance-band-exercises",
+      "title": "Resistance Band Exercises",
+      "summary": "Resistance band exercises for home strengthening and rehab.",
+      "steps": [
+        "Choose a band that lets you complete 12 to 15 controlled repetitions.",
+        "Anchor safely: under your foot, in a door anchor or around a sturdy post.",
+        "Key exercises: rows, chest press, shoulder rotations, leg press, side steps with band around knees, and ankle movements.",
+        "Move slowly, especially when returning to the start.",
+        "Progress to a stronger band when 15 repetitions feel easy."
+      ],
+      "howMuch": "2 to 3 sets of 10 to 15 repetitions, 2 to 3 days a week per muscle group.",
+      "category": "Muscle Strengthening Exercises",
+      "categorySlug": "muscle-strengthening-exercises",
+      "image": null
+    },
+    {
+      "slug": "resistance-band-shoulder-exercises",
+      "title": "Resistance Band Shoulder Exercises",
+      "summary": "Resistance band shoulder exercises for strength and rehab.",
+      "steps": [
+        "Rows: pull the band towards your ribs, squeezing the shoulder blades.",
+        "External and internal rotation: elbow at your side, rotate outwards and inwards against the band.",
+        "Pull-aparts: hold the band in front at shoulder height and pull the hands apart.",
+        "Front raise: stand on the band and lift the arm forward to shoulder height.",
+        "Scaption: stand on the band and lift the arm up and slightly out, thumb up."
+      ],
+      "howMuch": "12 to 15 repetitions of each, 2 to 3 sets, 3 to 4 days a week. Move to a stronger band when 15 repetitions feel easy.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "respiratory-muscle-training",
+      "title": "Respiratory Muscle Training",
+      "summary": "Respiratory muscle training (inspiratory muscle training) for breathlessness.",
+      "steps": [
+        "Sit upright and set the device to the prescribed resistance.",
+        "Breathe out fully, then breathe in hard and fast through the device.",
+        "Breathe out gently.",
+        "Repeat for the set number of breaths."
+      ],
+      "howMuch": "Typically 30 breaths, twice a day, as prescribed.",
+      "category": "Breathing and Respiratory Exercises",
+      "categorySlug": "breathing-and-respiratory-exercises",
+      "image": null
+    },
+    {
+      "slug": "rolling-exercises",
+      "title": "Rolling Exercises",
+      "summary": "Rolling exercises for babies and developmental delay.",
+      "steps": [
+        "Place a toy just out of reach to one side.",
+        "As the baby reaches, gently guide the hip or shoulder to help them roll.",
+        "Practise to both sides.",
+        "Reduce your help as they learn."
+      ],
+      "howMuch": "A few times during each play session.",
+      "category": "Pediatric Exercises",
+      "categorySlug": "pediatric-exercises",
+      "image": null
+    },
+    {
+      "slug": "rotator-cuff-rehabilitation-exercises",
+      "title": "Rotator Cuff Rehabilitation Exercises",
+      "summary": "Rotator cuff rehabilitation exercises for tendinopathy, tears and after repair.",
+      "steps": [
+        "Early after surgery: sling, pendulums, passive range by a therapist.",
+        "Active-assisted and active range as allowed.",
+        "Isometrics, then band strengthening.",
+        "Progressive strength and overhead function.",
+        "For tendinopathy without surgery, start with isometrics and progress load."
+      ],
+      "howMuch": "Daily, with strength sessions 3 times a week.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "rotator-cuff-strengthening",
+      "title": "Rotator Cuff Strengthening",
+      "summary": "Rotator cuff strengthening exercises.",
+      "steps": [
+        "Side-lying external rotation: lie on your side with a towel under the top elbow. Holding a light weight, rotate the forearm up towards the ceiling and lower slowly.",
+        "Band external rotation at 90 degrees: once basic rotation is strong, raise the elbow to shoulder height and rotate the forearm up.",
+        "Scaption: lift the arms up and slightly forward with thumbs up, to shoulder height.",
+        "Prone horizontal abduction: lie face down, arm hanging, lift it out sideways with thumb up."
+      ],
+      "howMuch": "8 to 15 repetitions, 3 sets, 3 days a week. Aim for the last few repetitions to feel hard but controlled.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "scapular-retraction",
+      "title": "Scapular Retraction",
+      "summary": "Scapular retraction exercise for posture, neck and shoulder pain.",
+      "steps": [
+        "Sit or stand tall with arms relaxed by your sides.",
+        "Gently draw your shoulder blades back and slightly down, as if sliding them into your back pockets.",
+        "Keep your neck long and don't shrug.",
+        "Hold 5 seconds and release slowly.",
+        "Progress by holding a resistance band in both hands, elbows bent at 90 degrees, and pulling the band apart as you squeeze."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 to 3 sets, once a day. Quick sets during the workday help build the habit.",
+      "category": "Neck Exercises",
+      "categorySlug": "neck-exercises",
+      "image": null
+    },
+    {
+      "slug": "scapular-stabilization",
+      "title": "Scapular Stabilization Exercises",
+      "summary": "Scapular stabilization exercises for shoulder pain and posture.",
+      "steps": [
+        "Rows: pull a band anchored in front of you towards your ribs, squeezing the shoulder blades back and down.",
+        "Prone T: lie face down, arms out to the sides, thumbs up. Squeeze the shoulder blades and lift the arms slightly.",
+        "Prone Y: same position with arms overhead in a Y shape. Lift slightly, keeping the neck long.",
+        "Prone W: elbows bent, arms in a W shape. Lift and squeeze.",
+        "Hold each lift 2 to 3 seconds."
+      ],
+      "howMuch": "10 repetitions of each, 2 sets, once a day. Start without weights.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "serratus-anterior-exercises",
+      "title": "Serratus Anterior Exercises",
+      "summary": "Serratus anterior exercises for shoulder blade winging and impingement.",
+      "steps": [
+        "Supine punch: lie on your back holding a light weight with the arm straight up. Punch towards the ceiling so the shoulder blade lifts off the floor, then lower slightly.",
+        "Wall push-up plus: do a wall push-up, then at the top push further so the shoulder blades spread apart.",
+        "Wall slides with foam roller or towel: forearms on the wall, roll up while pressing forward.",
+        "Progress to push-up plus on a table or the floor."
+      ],
+      "howMuch": "10 to 15 repetitions of each, 2 to 3 sets, once a day.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "short-arc-quads",
+      "title": "Short Arc Quads",
+      "summary": "Short arc quad exercise for knee strength after surgery or injury.",
+      "steps": [
+        "Lie or sit with your leg out straight and a rolled towel or coffee tin under the knee.",
+        "Keep the back of the knee on the roll.",
+        "Lift the heel until the knee is fully straight.",
+        "Hold 3 to 5 seconds, then lower slowly."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 to 3 sets, once or twice a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "short-foot-exercise",
+      "title": "Short Foot Exercise",
+      "summary": "Short foot exercise for flat feet and arch support.",
+      "steps": [
+        "Sit with your foot flat on the floor.",
+        "Without curling your toes, slide the ball of your foot towards your heel so the arch rises.",
+        "Keep the big toe pressed down.",
+        "Hold 5 seconds and relax.",
+        "Progress to standing on both feet, then on one foot."
+      ],
+      "howMuch": "10 holds, 2 to 3 sets, once a day.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": null
+    },
+    {
+      "slug": "shoulder-abduction",
+      "title": "Shoulder Abduction",
+      "summary": "Shoulder abduction exercise for rotator cuff and impingement pain.",
+      "steps": [
+        "Stand tall with the arm by your side, thumb pointing forward.",
+        "Lift the arm out to the side and slightly forward, in the plane of the shoulder blade (about 30 degrees in front of straight sideways).",
+        "Rise to shoulder height or as high as is comfortable without shrugging.",
+        "Lower slowly over 3 seconds.",
+        "Add a light weight or band when you can do 15 smooth repetitions."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 to 3 sets, once a day.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "shoulder-circles",
+      "title": "Shoulder Circles",
+      "summary": "Shoulder circles and shoulder rolls to relieve stiffness and tension.",
+      "steps": [
+        "Sit or stand tall with arms relaxed.",
+        "Lift both shoulders up towards your ears, roll them back, down and forward in a smooth circle.",
+        "Make the circle as large as is comfortable, especially the backward part.",
+        "After 10 circles backwards, do 5 forwards.",
+        "For a larger version, place your fingertips on your shoulders and draw circles with your elbows."
+      ],
+      "howMuch": "10 backward and 5 forward circles, every hour or two during desk work.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "shoulder-extension",
+      "title": "Shoulder Extension",
+      "summary": "Shoulder extension exercise for stiffness and strength.",
+      "steps": [
+        "Assisted: stand holding a stick behind your back with both hands. Lift the stick backwards away from your body.",
+        "Active: stand tall and move one arm straight back, keeping the elbow straight and the trunk still.",
+        "Resisted: anchor a band in front of you at waist height. Holding it with a straight arm, pull it back past your hip.",
+        "Return slowly."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 sets, once a day.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "shoulder-external-rotation",
+      "title": "Shoulder External Rotation",
+      "summary": "Shoulder external rotation with a resistance band for rotator cuff and shoulder pain.",
+      "steps": [
+        "Stand side-on to a door with a band anchored at elbow height, holding it in the hand furthest from the door.",
+        "Keep the elbow bent at 90 degrees and tucked against your side. A rolled towel between elbow and ribs helps.",
+        "Rotate the forearm outwards away from your belly, keeping the elbow in place.",
+        "Return slowly over 3 seconds.",
+        "For stiffness, do it assisted: lie on your back holding a stick and use the other arm to push the hand outwards."
+      ],
+      "howMuch": "12 to 15 repetitions, 2 to 3 sets, once a day.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "shoulder-flexion",
+      "title": "Shoulder Flexion",
+      "summary": "Shoulder flexion exercises for stiffness and weakness.",
+      "steps": [
+        "Assisted: lie on your back holding a stick with both hands. Use the good arm to help lift the stick overhead as far as comfortable.",
+        "Active: standing or lying, raise the arm forward with the thumb pointing up. Go as high as you can control without shrugging.",
+        "Resisted: hold a light weight or loop a band under your foot and lift forward to shoulder height.",
+        "Lower slowly each time."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 sets, once or twice a day. Stay at each stage until it's comfortable before progressing.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "shoulder-internal-rotation",
+      "title": "Shoulder Internal Rotation",
+      "summary": "Shoulder internal rotation exercises for stiffness and strength.",
+      "steps": [
+        "Strength: stand side-on to a door with a band anchored at elbow height, holding it in the hand nearest the door.",
+        "Keep the elbow tucked at your side, bent to 90 degrees, and pull the band inwards across your belly.",
+        "Return slowly.",
+        "Stretch: hold a towel over one shoulder with the top hand and grasp the bottom end behind your back with the stiff arm. Pull the towel up with the top hand to slide the lower hand higher."
+      ],
+      "howMuch": "Strength: 12 to 15 repetitions, 2 to 3 sets. Stretch: 5 slow repetitions with a 10 second hold, twice a day.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "shoulder-isometric-exercises",
+      "title": "Shoulder Isometric Exercises",
+      "summary": "Shoulder isometric exercises for rotator cuff pain and early rehab.",
+      "steps": [
+        "Stand next to a wall or door frame with the elbow bent at 90 degrees and tucked at your side.",
+        "External rotation: press the back of the wrist outwards into the door frame.",
+        "Internal rotation: press the palm inwards into the frame.",
+        "Flexion: face the wall and press your fist forward into it.",
+        "Abduction: stand side-on and press the outside of the elbow into the wall.",
+        "Hold each for 10 to 30 seconds at a comfortable effort."
+      ],
+      "howMuch": "5 holds in each direction, once or twice a day.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "shoulder-stretch",
+      "title": "Shoulder Stretch",
+      "summary": "Cross-body shoulder stretch for shoulder tightness.",
+      "steps": [
+        "Stand or sit tall.",
+        "Bring one arm across your chest at shoulder height.",
+        "Use the other hand to gently pull the arm closer, holding above the elbow.",
+        "Keep the shoulder down, away from the ear.",
+        "Hold 30 seconds, switch sides."
+      ],
+      "howMuch": "3 holds each side, once or twice a day.",
+      "category": "Stretching Exercises",
+      "categorySlug": "stretching-exercises",
+      "image": null
+    },
+    {
+      "slug": "sideways-walking",
+      "title": "Sideways Walking",
+      "summary": "Sideways walking (side stepping) exercise for balance and hip strength.",
+      "steps": [
+        "Stand facing a counter with hands resting on it.",
+        "Step to the side with one foot, then bring the other to meet it.",
+        "Keep toes pointing forward and trunk upright.",
+        "Go 10 steps one way, then back.",
+        "Progress by adding a band around the knees or ankles."
+      ],
+      "howMuch": "3 to 4 lengths, once a day.",
+      "category": "Balance and Mobility Exercises",
+      "categorySlug": "balance-and-mobility-exercises",
+      "image": null
+    },
+    {
+      "slug": "single-leg-balance",
+      "title": "Single Leg Balance",
+      "summary": "Single leg balance exercise for ankle sprains and fall prevention.",
+      "steps": [
+        "Stand next to a counter with fingertips resting on it.",
+        "Lift one foot off the floor and balance on the other.",
+        "Keep a soft knee and upright posture.",
+        "Progress: take hands off, then close your eyes, then stand on a cushion.",
+        "Advanced: throw and catch a ball while balancing."
+      ],
+      "howMuch": "30 seconds, 3 times each leg, once or twice a day.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": null
+    },
+    {
+      "slug": "single-leg-bridge",
+      "title": "Single Leg Bridge",
+      "summary": "Single leg bridge exercise for glute strength and pelvic control.",
+      "steps": [
+        "Lie on your back with knees bent and feet flat.",
+        "Straighten one leg in line with the other thigh, or hug that knee to your chest for an easier version.",
+        "Push through the heel of the bent leg and lift the hips.",
+        "Keep the pelvis level; don't let one side drop.",
+        "Hold 3 seconds, lower slowly."
+      ],
+      "howMuch": "8 to 12 repetitions each leg, 2 to 3 sets, 3 to 4 days a week.",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": null
+    },
+    {
+      "slug": "sit-to-stand",
+      "title": "Sit to Stand",
+      "summary": "Sit to stand exercise for leg strength, balance and independence.",
+      "steps": [
+        "Sit towards the front of a firm chair with feet hip width apart and slightly behind the knees.",
+        "Lean your trunk forward over your feet (\"nose over toes\").",
+        "Push through both feet and stand up fully.",
+        "Sit back down slowly, reaching back with your bottom rather than dropping.",
+        "Use your hands on the armrests at first, then progress to arms crossed."
+      ],
+      "howMuch": "8 to 12 repetitions, 2 to 3 sets, once or twice a day. Use a higher chair if you can't manage from a standard one.",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": null
+    },
+    {
+      "slug": "sitting-balance-exercises",
+      "title": "Sitting Balance Exercises",
+      "summary": "Sitting balance exercises for babies and children with delays.",
+      "steps": [
+        "Sit the child on the floor with support at the hips.",
+        "Offer toys in different directions to encourage reaching.",
+        "Gently tip them slightly to encourage saving reactions with the hands.",
+        "Progress to sitting on a small bench or therapy ball with support."
+      ],
+      "howMuch": "Short, frequent play sessions.",
+      "category": "Pediatric Exercises",
+      "categorySlug": "pediatric-exercises",
+      "image": null
+    },
+    {
+      "slug": "spinal-cord-injury-exercises",
+      "title": "Spinal Cord Injury Exercises",
+      "summary": "Spinal cord injury exercises: strength, range of motion, breathing and transfers.",
+      "steps": [
+        "Range of motion and stretching for all joints.",
+        "Strengthening of the arms and any active muscles.",
+        "Breathing and cough training, especially in higher injuries.",
+        "Seated balance and transfer practice.",
+        "Standing with frames where appropriate."
+      ],
+      "howMuch": "Daily, with regular review.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "sports-rehabilitation-exercises",
+      "title": "Sports Rehabilitation Exercises",
+      "summary": "Sports rehabilitation exercises and return-to-sport programme.",
+      "steps": [
+        "Protect and restore: manage pain, restore range.",
+        "Build strength and control specific to the injured area.",
+        "Add power and agility: jumping, cutting, sprinting.",
+        "Sport-specific drills and gradual training return.",
+        "Testing: strength, hop tests and sport readiness."
+      ],
+      "howMuch": "Daily rehab with training loads progressed weekly.",
+      "category": "Rehabilitation Exercises",
+      "categorySlug": "rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "stair-training",
+      "title": "Stair Training",
+      "summary": "Stair training after stroke, knee or hip surgery.",
+      "steps": [
+        "Hold the rail with the hand on the stronger side, or both rails if available.",
+        "Going up: step up with the stronger leg first, then the weaker leg, then the stick if used.",
+        "Going down: stick first, then the weaker leg, then the stronger leg.",
+        "One step at a time until strength improves.",
+        "Progress to step-over-step when safe."
+      ],
+      "howMuch": "Practise daily on the stairs you use at home, with supervision at first.",
+      "category": "Neurological Rehabilitation Exercises",
+      "categorySlug": "neurological-rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "standing-and-walking-training",
+      "title": "Standing and Walking Training",
+      "summary": "Standing and walking training for children with developmental delay.",
+      "steps": [
+        "Encourage pulling to stand at a low table with toys on it.",
+        "Cruising: move toys along the furniture so the child steps sideways.",
+        "Push toys: a stable push cart helps early walking.",
+        "Hand-held walking, reducing support gradually.",
+        "Orthoses or walkers may be prescribed for some children."
+      ],
+      "howMuch": "Daily play, with therapy guidance.",
+      "category": "Pediatric Exercises",
+      "categorySlug": "pediatric-exercises",
+      "image": null
+    },
+    {
+      "slug": "step-downs",
+      "title": "Step Downs",
+      "summary": "Step down exercise for knee control, stairs and ACL rehab.",
+      "steps": [
+        "Stand side-on on a low step, holding a rail.",
+        "Keep your weight on the leg on the step.",
+        "Slowly bend that knee to lower the other heel towards the floor.",
+        "Lightly tap the heel down, then straighten back up.",
+        "Watch in a mirror: the standing knee should stay over the second toe."
+      ],
+      "howMuch": "8 to 12 repetitions each leg, 2 to 3 sets, once a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "step-training",
+      "title": "Step Training",
+      "summary": "Step training exercises for balance and fall prevention.",
+      "steps": [
+        "Stand next to a counter.",
+        "Step forward with one foot and return. Repeat with the other.",
+        "Step to the side, then backwards.",
+        "Progress to faster steps, or stepping to targets on the floor.",
+        "Advanced: step onto and off a low step."
+      ],
+      "howMuch": "10 steps in each direction with each leg, once a day.",
+      "category": "Balance and Mobility Exercises",
+      "categorySlug": "balance-and-mobility-exercises",
+      "image": null
+    },
+    {
+      "slug": "step-ups",
+      "title": "Step Ups",
+      "summary": "Step up exercise for knee and hip strength.",
+      "steps": [
+        "Stand facing a bottom stair or sturdy step, holding a rail if needed.",
+        "Place one whole foot on the step.",
+        "Push through that heel to step up, bringing the other foot up to join it.",
+        "Step down with the other leg first, slowly.",
+        "Keep the knee in line with the second toe throughout."
+      ],
+      "howMuch": "10 repetitions each leg, 2 to 3 sets, once a day. Start with a low step (10 to 15 centimetres).",
+      "category": "Hip Exercises",
+      "categorySlug": "hip-exercises",
+      "image": "/gifs/step-ups.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Step_up-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "straight-leg-raise",
+      "title": "Straight Leg Raise",
+      "summary": "Straight leg raise exercise for knee rehab.",
+      "steps": [
+        "Lie on your back. Bend the other knee with the foot flat to protect your back.",
+        "Tighten the thigh muscle of the straight leg so the knee is fully straight.",
+        "Keeping it tight, lift the leg to the height of the other knee.",
+        "Hold 3 seconds and lower slowly.",
+        "Progress with an ankle weight."
+      ],
+      "howMuch": "10 repetitions, 2 to 3 sets, once or twice a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "supported-squats",
+      "title": "Supported Squats",
+      "summary": "Supported squats for older adults.",
+      "steps": [
+        "Stand facing a kitchen counter, holding it with both hands.",
+        "Feet hip width apart.",
+        "Bend your knees and push your hips back as if about to sit.",
+        "Go as low as is comfortable, then stand up tall.",
+        "Progress by holding on lightly with one hand."
+      ],
+      "howMuch": "10 repetitions, 2 sets, once a day.",
+      "category": "Senior Citizen Exercises",
+      "categorySlug": "senior-citizen-exercises",
+      "image": null
+    },
+    {
+      "slug": "tandem-walking",
+      "title": "Tandem Walking",
+      "summary": "Tandem walking and tandem standing (heel-to-toe) balance exercises.",
+      "steps": [
+        "Tandem stand: stand next to a counter and place one foot directly in front of the other, heel touching toe. Hold 30 seconds, then swap feet.",
+        "Tandem walk: walk along a counter or hallway, placing heel to toe with each step.",
+        "Look ahead, not at your feet, once steady.",
+        "Progress: hands off the support, then walking backwards heel to toe."
+      ],
+      "howMuch": "Tandem stand 3 holds of 30 seconds. Tandem walk 3 to 4 lengths of 3 to 5 metres, once a day.",
+      "category": "Balance and Mobility Exercises",
+      "categorySlug": "balance-and-mobility-exercises",
+      "image": null
+    },
+    {
+      "slug": "tendon-gliding-exercises",
+      "title": "Tendon Gliding Exercises",
+      "summary": "Tendon gliding exercises for carpal tunnel syndrome and trigger finger.",
+      "steps": [
+        "Start with the fingers straight.",
+        "Hook fist: bend the top two finger joints, keeping the knuckles straight.",
+        "Full fist: bend all joints.",
+        "Table top: bend at the knuckles only, fingers straight.",
+        "Straight fist: bend the knuckles and middle joints, fingertips touching the palm base.",
+        "Return to straight between each. Hold each position 3 to 5 seconds."
+      ],
+      "howMuch": "5 to 10 cycles, 3 to 5 times a day.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    },
+    {
+      "slug": "terminal-knee-extension",
+      "title": "Terminal Knee Extension",
+      "summary": "Terminal knee extension (TKE) with a band for ACL and knee replacement rehab.",
+      "steps": [
+        "Loop a band around a sturdy object at knee height and step into it so it sits behind your knee.",
+        "Step back until the band is tight and the knee is slightly bent.",
+        "Straighten the knee fully against the band, squeezing the thigh.",
+        "Hold 2 to 3 seconds, then slowly let the knee bend again."
+      ],
+      "howMuch": "15 repetitions, 2 to 3 sets, once a day.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "thoracic-extension",
+      "title": "Thoracic Extension",
+      "summary": "Thoracic extension exercise for upper back stiffness and posture.",
+      "steps": [
+        "Chair version: sit in a chair with a backrest reaching mid-back. Support your head with your hands.",
+        "Gently lean back over the top of the backrest, then return upright.",
+        "Towel version: lie on your back with a firmly rolled towel across your upper back at shoulder blade level.",
+        "Support your head and let your upper back relax over the roll for 30 seconds.",
+        "Move the roll slightly higher or lower and repeat."
+      ],
+      "howMuch": "10 repetitions in the chair, or 3 positions on the towel, once or twice a day.",
+      "category": "Back and Spine Exercises",
+      "categorySlug": "back-and-spine-exercises",
+      "image": null
+    },
+    {
+      "slug": "toe-curls",
+      "title": "Toe Curls",
+      "summary": "Toe curl and towel scrunch exercises for foot strength.",
+      "steps": [
+        "Sit with a towel flat on the floor under your foot.",
+        "Curl your toes to scrunch the towel towards you.",
+        "Relax and repeat until the towel is gathered.",
+        "Alternative: pick up small objects like marbles with your toes and drop them into a bowl."
+      ],
+      "howMuch": "2 to 3 rounds, once a day.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": null
+    },
+    {
+      "slug": "toe-raises",
+      "title": "Toe Raises",
+      "summary": "Toe raises for shin strength, foot drop and fall prevention.",
+      "steps": [
+        "Stand with your back against a wall or hold a counter, heels close to the wall.",
+        "Keeping your heels on the floor, lift your toes and the front of your feet as high as possible.",
+        "Hold 2 seconds, then lower slowly.",
+        "Seated version: sit and lift the toes while keeping heels down."
+      ],
+      "howMuch": "15 repetitions, 2 to 3 sets, once a day.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": null
+    },
+    {
+      "slug": "toe-walking",
+      "title": "Toe Walking",
+      "summary": "Toe walking exercise for calf strength and ankle stability.",
+      "steps": [
+        "Rise onto the balls of your feet near a wall or counter.",
+        "Walk forward in small steps, keeping the heels high.",
+        "Keep your posture upright.",
+        "Walk 10 metres, lower and rest."
+      ],
+      "howMuch": "3 to 4 lengths, once a day, once standing calf raises are comfortable.",
+      "category": "Ankle and Foot Exercises",
+      "categorySlug": "ankle-and-foot-exercises",
+      "image": null
+    },
+    {
+      "slug": "transfer-training",
+      "title": "Transfer Training",
+      "summary": "Transfer training for stroke, spinal cord injury and elderly care.",
+      "steps": [
+        "Set up: place the chair at a slight angle to the bed, brakes on if a wheelchair.",
+        "Shuffle forward to the edge, feet flat and slightly back.",
+        "Lean forward, push through the arms and legs to stand or lift.",
+        "Pivot on the feet towards the target seat.",
+        "Reach back for the armrest and sit slowly."
+      ],
+      "howMuch": "Practise the transfers you need daily, with guidance until confident.",
+      "category": "Balance and Mobility Exercises",
+      "categorySlug": "balance-and-mobility-exercises",
+      "image": null
+    },
+    {
+      "slug": "triceps-stretch",
+      "title": "Triceps Stretch",
+      "summary": "Triceps stretch for arm and shoulder flexibility.",
+      "steps": [
+        "Lift one arm overhead and bend the elbow so the hand reaches down your upper back.",
+        "Use the other hand to gently press the elbow back.",
+        "Keep your head up and back straight.",
+        "Hold 30 seconds, switch sides."
+      ],
+      "howMuch": "2 to 3 holds each side, once a day.",
+      "category": "Stretching Exercises",
+      "categorySlug": "stretching-exercises",
+      "image": null
+    },
+    {
+      "slug": "tummy-time",
+      "title": "Tummy Time",
+      "summary": "Tummy time for babies.",
+      "steps": [
+        "Start from the first weeks with a few minutes at a time, after a nappy change rather than straight after feeds.",
+        "Lie your baby on their tummy on a firm surface or on your chest.",
+        "Get down to their level and use toys, faces and voices to encourage them to lift their head.",
+        "A rolled towel under the chest can help if they find it hard.",
+        "Always stay with your baby."
+      ],
+      "howMuch": "Build up gradually towards a total of around an hour a day across many short sessions by about 3 months.",
+      "category": "Pediatric Exercises",
+      "categorySlug": "pediatric-exercises",
+      "image": null
+    },
+    {
+      "slug": "upper-trapezius-stretch",
+      "title": "Upper Trapezius Stretch",
+      "summary": "Upper trapezius stretch for neck and shoulder tension.",
+      "steps": [
+        "Sit tall and hold the edge of the chair seat with your right hand to anchor the shoulder down.",
+        "Tilt your left ear towards your left shoulder.",
+        "Turn your nose slightly away from the stretched side if that increases the stretch.",
+        "Place your left hand lightly on your head to add a little weight, not force.",
+        "Hold for 20 to 30 seconds, then switch sides."
+      ],
+      "howMuch": "2 to 3 holds per side, 2 to 3 times a day.",
+      "category": "Neck Exercises",
+      "categorySlug": "neck-exercises",
+      "image": null
+    },
+    {
+      "slug": "walking-exercises",
+      "title": "Walking Exercises",
+      "summary": "Walking exercise programme for seniors.",
+      "steps": [
+        "Start with 5 to 10 minutes on flat ground at a comfortable pace.",
+        "Wear supportive shoes and use your walking aid if prescribed.",
+        "Add a few minutes every week.",
+        "Aim to walk at a pace where you can talk but not sing.",
+        "Choose safe, well lit routes; a mall or park path works well."
+      ],
+      "howMuch": "Build up towards 30 minutes on most days, split into shorter walks if needed.",
+      "category": "Senior Citizen Exercises",
+      "categorySlug": "senior-citizen-exercises",
+      "image": null
+    },
+    {
+      "slug": "wall-push-ups",
+      "title": "Wall and Modified Push Ups",
+      "summary": "Wall push-ups and modified push-ups for upper body strength and shoulder rehab.",
+      "steps": [
+        "Wall push-up: stand an arm's length from a wall, hands on it at shoulder height and width.",
+        "Bend the elbows to bring your chest towards the wall, keeping the body straight.",
+        "Push back out.",
+        "Progress to a counter or table, then to the floor from the knees, keeping a straight line from knees to shoulders.",
+        "Final stage: full push-ups."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 to 3 sets, 3 days a week.",
+      "category": "Muscle Strengthening Exercises",
+      "categorySlug": "muscle-strengthening-exercises",
+      "image": "/gifs/wall-push-ups.gif",
+      "imageCredit": {
+        "author": "Centers for Disease Control and Prevention",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Wallpushup-CDC_strength_training_for_older_adults.gif"
+      }
+    },
+    {
+      "slug": "wall-slides",
+      "title": "Wall Slides",
+      "summary": "Wall slides exercise for shoulder blade control and overhead shoulder pain.",
+      "steps": [
+        "Stand facing a wall with your forearms on it, elbows at shoulder height and shoulder width apart.",
+        "Gently press your forearms into the wall so the shoulder blades wrap around the ribs.",
+        "Slide your forearms up the wall, keeping the pressure, until the arms are as high as comfortable.",
+        "Slowly slide back down.",
+        "Progress with a light band around the wrists, pushing outwards as you slide."
+      ],
+      "howMuch": "10 to 12 repetitions, 2 to 3 sets, once a day.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "wall-squats",
+      "title": "Wall Squats",
+      "summary": "Wall squat (wall sit) for knee strength and patellar tendon pain.",
+      "steps": [
+        "Stand with your back against a wall and feet about a foot in front of it, hip width apart.",
+        "Slide down the wall until your knees bend to a comfortable depth, no deeper than 90 degrees.",
+        "Keep knees over the ankles, not past the toes.",
+        "Hold for 10 to 45 seconds, then slide back up.",
+        "A ball between the knees helps keep alignment."
+      ],
+      "howMuch": "3 to 5 holds, once a day. For tendon pain, 5 holds of 30 to 45 seconds are often used.",
+      "category": "Knee Exercises",
+      "categorySlug": "knee-exercises",
+      "image": null
+    },
+    {
+      "slug": "wall-walks",
+      "title": "Wall Walks",
+      "summary": "Wall walks (finger ladder) for frozen shoulder and shoulder stiffness.",
+      "steps": [
+        "Stand facing a wall, about a forearm's length away.",
+        "Place your fingertips on the wall at waist height.",
+        "Walk your fingers up the wall slowly, stepping closer as needed.",
+        "Stop when you feel a stretch, hold 5 to 10 seconds, then walk back down.",
+        "Repeat side-on to the wall to work sideways lifting."
+      ],
+      "howMuch": "5 to 10 climbs, 2 to 3 times a day. Mark the highest point with a pencil or sticky note.",
+      "category": "Shoulder Exercises",
+      "categorySlug": "shoulder-exercises",
+      "image": null
+    },
+    {
+      "slug": "weight-bearing-exercises",
+      "title": "Weight Bearing Exercises",
+      "summary": "Weight bearing exercises for stroke, spinal cord injury and osteoporosis.",
+      "steps": [
+        "Supported standing: stand at a counter or in a standing frame for gradually longer periods.",
+        "Upper limb: lean on the affected arm with the hand flat on a table, elbow straight.",
+        "Weight shifts and mini squats once standing is steady.",
+        "Walking, as able, is the most useful weight bearing activity."
+      ],
+      "howMuch": "Standing for 10 to 30 minutes daily where possible, built up gradually.",
+      "category": "Neurological Rehabilitation Exercises",
+      "categorySlug": "neurological-rehabilitation-exercises",
+      "image": null
+    },
+    {
+      "slug": "weight-shifting",
+      "title": "Weight Shifting",
+      "summary": "Weight shifting exercises for balance and walking recovery.",
+      "steps": [
+        "Stand with feet hip width apart, holding a counter.",
+        "Slowly shift your weight onto the right leg until the left feels light. Hold 5 seconds.",
+        "Shift to the left. Hold 5 seconds.",
+        "Repeat forwards and backwards with one foot slightly ahead.",
+        "Progress by reducing hand support."
+      ],
+      "howMuch": "10 shifts in each direction, 2 times a day.",
+      "category": "Balance and Mobility Exercises",
+      "categorySlug": "balance-and-mobility-exercises",
+      "image": null
+    },
+    {
+      "slug": "wrist-circles",
+      "title": "Wrist Circles",
+      "summary": "Wrist circles for wrist stiffness and warm-up.",
+      "steps": [
+        "Rest your forearm on a table or hold it in front of you.",
+        "Make a loose fist or keep fingers relaxed.",
+        "Draw slow, large circles with your hand, 10 in each direction.",
+        "Keep the forearm still."
+      ],
+      "howMuch": "10 circles each way, several times a day.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    },
+    {
+      "slug": "wrist-extensor-stretch",
+      "title": "Wrist Extensor Stretch",
+      "summary": "Wrist extensor stretch for tennis elbow and forearm tightness.",
+      "steps": [
+        "Hold your arm straight in front with the palm facing down.",
+        "Bend the wrist so the fingers point to the floor.",
+        "Use the other hand to gently press the back of the hand towards you.",
+        "Hold 20 to 30 seconds. You should feel a stretch on the back of the forearm."
+      ],
+      "howMuch": "3 holds, 2 to 3 times a day.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    },
+    {
+      "slug": "wrist-flexion-extension",
+      "title": "Wrist Flexion and Extension",
+      "summary": "Wrist flexion and extension exercises for wrist fracture, tennis elbow and stiffness.",
+      "steps": [
+        "Rest your forearm on a table with the hand over the edge, palm down.",
+        "Extension: lift the back of the hand up as far as comfortable, then lower slowly.",
+        "Turn the palm up. Flexion: curl the hand up, then lower slowly.",
+        "Once pain-free, hold a light weight or water bottle.",
+        "For tennis elbow, focus on slow lowering with the palm down."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 to 3 sets, once a day.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    },
+    {
+      "slug": "wrist-flexor-stretch",
+      "title": "Wrist Flexor Stretch",
+      "summary": "Wrist flexor stretch for golfer's elbow and forearm tightness.",
+      "steps": [
+        "Hold your arm straight in front with the palm facing up.",
+        "Bend the wrist back so the fingers point to the floor.",
+        "Use the other hand to gently pull the fingers back towards you.",
+        "Hold 20 to 30 seconds."
+      ],
+      "howMuch": "3 holds, 2 to 3 times a day.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    },
+    {
+      "slug": "forearm-pronation-supination",
+      "title": "Wrist Pronation and Supination",
+      "summary": "Pronation and supination exercises for forearm rotation after fractures.",
+      "steps": [
+        "Sit with your elbow bent at 90 degrees, tucked against your side, forearm resting on a table.",
+        "Slowly turn your palm to face up, then down.",
+        "Hold 2 to 3 seconds at each end.",
+        "Progress by holding a hammer or bottle; the longer the lever, the harder it is."
+      ],
+      "howMuch": "10 to 15 repetitions, 2 to 3 sets, 2 to 3 times a day in early rehab.",
+      "category": "Elbow, Wrist and Hand Exercises",
+      "categorySlug": "elbow-wrist-and-hand-exercises",
+      "image": null
+    }
+  ]
+}

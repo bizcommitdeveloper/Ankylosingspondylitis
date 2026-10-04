@@ -1,0 +1,36 @@
+{
+ "_exclude": [
+  "heron",
+  "pendulums-resonance",
+  "Roman ?Chair",
+  "CIRA",
+  "Thales",
+  "ejaculat",
+  "orgasm",
+  "nude",
+  "corset",
+  "penis",
+  "erect",
+  "clitor"
+ ],
+ "back-extension-exercise": {
+  "status": "rejected",
+  "note": "Checked: CDC \"Floor back extensions\" and Everkinetic \"Supermans\" lift arms and legs; our steps lift only the chest with arms by the sides."
+ },
+ "chest-stretch": {
+  "status": "rejected",
+  "note": "Checked: CDC \"Chest stretch\" clasps hands behind the back; our steps are a doorway stretch."
+ },
+ "core-bracing": {
+  "status": "rejected",
+  "note": "Checked: Everkinetic \"abdominal drawing-in\" sucks the tummy in, which our steps say not to do."
+ },
+ "single-leg-bridge": {
+  "status": "rejected",
+  "note": "Checked: only two-leg bridge drawings exist; not reused here."
+ },
+ "chair-exercises": {
+  "status": "rejected",
+  "note": "Checked: CDC \"Overhead press\" (dumbbell press) is not our forward arm raise."
+ }
+}
