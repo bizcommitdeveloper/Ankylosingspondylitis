@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getExercise } from "../data";
 import { ImagePlaceholder } from "../components/ImagePlaceholder";
-import { Caution, Clock, Steps } from "../components/icons";
+import { Clock, Steps } from "../components/icons";
 
 export function ExercisePage() {
   const { slug = "" } = useParams();
@@ -57,18 +57,6 @@ export function ExercisePage() {
         </section>
       )}
 
-      {ex.warnings && ex.warnings.length > 0 && (
-        <section className="block warn">
-          <h2>
-            <Caution size={18} /> Stop and get checked if
-          </h2>
-          <ul className="bullets">
-            {ex.warnings.map((w, i) => (
-              <li key={i}>{w}</li>
-            ))}
-          </ul>
-        </section>
-      )}
     </div>
   );
 }
