@@ -72,7 +72,9 @@ data — adding/editing an exercise is a data change, not a code change.
 ## Conventions
 
 - Routes: `/` (home: search + category grid), `/category/:slug`,
-  `/exercise/:slug`. Served as a SPA (hosts rewrite all paths to `index.html`).
+  `/exercise/:slug`. Served as a SPA: `vercel.json` (and `firebase.json`)
+  rewrite unknown paths to `index.html`, so deep links and refreshes work.
+  Static files in `public/` are served first.
 - Icons are inline SVGs in `components/icons.tsx` (`IconProps = SVGProps & {size?}`);
   `tsconfig` has `noUnusedLocals`, so remove imports you stop using.
 - Keep styling in `styles.css` using the existing CSS variables; match the card
